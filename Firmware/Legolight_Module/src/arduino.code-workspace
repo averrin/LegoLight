@@ -1,0 +1,11 @@
+{
+	"folders": [
+		{
+			"path": "../../../../../.platformio/packages/framework-arduino-samd-sparkfun/cores/arduino"
+		},
+		{
+			"path": ".."
+		}
+	],
+	"settings": {}
+}
