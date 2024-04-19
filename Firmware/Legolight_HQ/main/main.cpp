@@ -30,6 +30,8 @@ lv_obj_t *button_forward;
 lv_obj_t *button_toggle;
 lv_obj_t *device_widget;
 lv_obj_t *device_name;
+lv_obj_t *button_rgb;
+lv_obj_t *table;
 
 lv_style_t style_btn;
 lv_style_t style_btn_checked;
@@ -47,22 +49,37 @@ int device_index = 0;
 bool legolight_enabled = false;
 
 using namespace ace_button;
+uint8_t btnPin = 0;
+AceButton button(btnPin);
+bool sleep_enabled = false;
 
-// void handleEvent(AceButton * /* button */, uint8_t eventType,
-//                  uint8_t /* buttonState */)
-// {
-//     switch (eventType)
-//     {
-//     case AceButton::kEventPressed:
-//         setRotation();
-//         break;
-//     default:
-//         break;
-//     }
-// }
+void toggleSleep()
+{
+    sleep_enabled = !sleep_enabled;
+    auto b = 255;
+    if (sleep_enabled)
+        b = 0;
+    amoled.setBrightness(b);
+}
 
+void handleEvent(AceButton * /* button */, uint8_t eventType,
+                 uint8_t /* buttonState */)
+{
+    switch (eventType)
+    {
+    case AceButton::kEventPressed:
+    {
+        Serial.println("button");
+        toggleSleep();
+        break;
+    }
+    default:
+        break;
+    }
+}
 
-void topBar(lv_obj_t *parent) {
+void topBar(lv_obj_t *parent)
+{
     clock_widget = clockWidget(parent);
     lv_obj_set_grid_cell(clock_widget,
                          LV_GRID_ALIGN_STRETCH, 0, 1,
@@ -97,6 +114,18 @@ void setDevice(int di)
     {
         lv_obj_add_flag(button_forward, LV_OBJ_FLAG_HIDDEN);
     }
+}
+
+static void screen_handler(lv_event_t *e)
+{
+    // lv_event_code_t code = lv_event_get_code(e);
+    // if (code == LV_EVENT_CLICKED)
+    // {
+    if (sleep_enabled)
+    {
+        toggleSleep();
+    }
+    // }
 }
 
 static void button_forward_handler(lv_event_t *e)
@@ -136,25 +165,50 @@ static void button_toggle_handler(lv_event_t *e)
     }
 }
 
+void configDevice()
+{
+    auto device = found_devices[device_index];
+    lv_label_set_text_fmt(lv_obj_get_child(device_name, 0), device.meta.name.c_str());
+
+    lv_obj_clear_state(button_rgb, LV_STATE_CHECKED);
+    if(device.rgb_enabled) {
+        lv_obj_add_state(button_rgb, LV_STATE_CHECKED);
+    }
+
+    for (auto p = 0; p < 16; p++)
+    {
+        auto b = lv_obj_get_child(table, p);
+        lv_obj_clear_state(b, LV_STATE_CHECKED);
+        if(p < 8 && ((device.led_state0 >> 7-p) & 1)) {
+            lv_obj_add_state(b, LV_STATE_CHECKED);
+        }
+        if(p >= 8 && ((device.led_state1 >> (15-p)) & 1)) {
+            lv_obj_add_state(b, LV_STATE_CHECKED);
+        }
+    }
+}
+
 static void button_config_handler(lv_event_t *e)
 {
     lv_event_code_t code = lv_event_get_code(e);
     if (code == LV_EVENT_CLICKED)
     {
-        lv_label_set_text_fmt(lv_obj_get_child(device_name, 0), found_devices[device_index].meta.name.c_str());
+        configDevice();
         shell.activate("device_config");
     }
 }
-
 
 void deviceSelector(lv_obj_t *parent)
 {
     config = initConfig();
     found_devices = findDevices();
 
-    for (auto &device : found_devices) {
-        for (auto c : config.devices) {
-            if (c.address == device.address) {
+    for (auto &device : found_devices)
+    {
+        for (auto c : config.devices)
+        {
+            if (c.address == device.address)
+            {
                 device.meta = c;
                 break;
             }
@@ -203,8 +257,8 @@ static void button_home_handler(lv_event_t *e)
     }
 }
 
-
-lv_obj_t * homeScreen(lv_obj_t *parent) {
+lv_obj_t *homeScreen(lv_obj_t *parent)
+{
 
     static lv_coord_t col_dsc[] = {130, 130, 130, LV_GRID_TEMPLATE_LAST};
     static lv_coord_t row_dsc[] = {54, 54, 380, 54, LV_GRID_TEMPLATE_LAST};
@@ -224,7 +278,8 @@ lv_obj_t * homeScreen(lv_obj_t *parent) {
     return cont;
 }
 
-lv_obj_t * deviceConfigScreen(lv_obj_t *parent) {
+lv_obj_t *deviceConfigScreen(lv_obj_t *parent)
+{
 
     static lv_coord_t col_dsc[] = {130, 130, 130, LV_GRID_TEMPLATE_LAST};
     static lv_coord_t row_dsc[] = {54, 440, 54, LV_GRID_TEMPLATE_LAST};
@@ -243,8 +298,8 @@ lv_obj_t * deviceConfigScreen(lv_obj_t *parent) {
     lv_obj_set_grid_cell(device_name,
                          LV_GRID_ALIGN_STRETCH, 0, 1,
                          LV_GRID_ALIGN_STRETCH, 0, 1);
-    
-    auto button_rgb = insertButton(cont, "RGB", 2, 0);
+
+    button_rgb = insertButton(cont, "RGB", 2, 0);
     lv_obj_add_flag(button_rgb, LV_OBJ_FLAG_CHECKABLE);
 
     lv_obj_add_style(button_rgb, &style_btn, 0);
@@ -259,9 +314,9 @@ lv_obj_t * deviceConfigScreen(lv_obj_t *parent) {
     lv_coord_t bs = 82;
     int pad = 12;
 
-    static lv_coord_t dsc[] = {bs,bs,bs,bs, LV_GRID_TEMPLATE_LAST};
+    static lv_coord_t dsc[] = {bs, bs, bs, bs, LV_GRID_TEMPLATE_LAST};
 
-    lv_obj_t *table = lv_obj_create(cont);
+    table = lv_obj_create(cont);
     lv_obj_set_style_grid_column_dsc_array(table, dsc, 0);
     lv_obj_set_style_grid_row_dsc_array(table, dsc, 0);
     lv_obj_set_layout(table, LV_LAYOUT_GRID);
@@ -269,16 +324,17 @@ lv_obj_t * deviceConfigScreen(lv_obj_t *parent) {
     lv_obj_set_style_pad_row(table, pad, 0);
     lv_obj_set_style_pad_column(table, pad, 0);
 
-
-    for (auto p = 0; p < 16; p++) {
+    for (auto p = 0; p < 16; p++)
+    {
         std::stringstream stream;
         stream << std::hex << p;
-        std::string result( stream.str() );
-        auto b = insertButton(table, result, p%4, p/4);
+        std::string result(stream.str());
+        auto b = insertButton(table, result, p % 4, p / 4);
         lv_obj_add_flag(b, LV_OBJ_FLAG_CHECKABLE);
 
         lv_obj_add_style(b, &style_btn, 0);
         lv_obj_add_style(b, &style_btn_checked, LV_STATE_CHECKED);
+
     }
 
     lv_obj_set_grid_cell(table,
@@ -314,6 +370,8 @@ void setup(void)
     lv_style_init(&style_btn_checked);
     lv_style_set_bg_color(&style_btn_checked, lv_palette_main(LV_PALETTE_BLUE));
 
+    lv_obj_add_event_cb(lv_scr_act(), screen_handler, LV_EVENT_GESTURE, NULL);
+
     auto home = homeScreen(lv_scr_act());
     auto deviceConfig = deviceConfigScreen(lv_scr_act());
 
@@ -325,19 +383,24 @@ void setup(void)
     if (mountSD)
     {
         deviceSelector(home);
-    } else {
+    }
+    else
+    {
         auto warn = textWidget(home);
         lv_label_set_text_fmt(lv_obj_get_child(warn, 0), "Please insert SD card with config");
         lv_obj_set_grid_cell(warn,
-                         LV_GRID_ALIGN_CENTER, 0, 3,
-                         LV_GRID_ALIGN_CENTER, 2, 1);
+                             LV_GRID_ALIGN_CENTER, 0, 3,
+                             LV_GRID_ALIGN_CENTER, 2, 1);
     }
     shell.activate("home");
+
+    pinMode(btnPin, INPUT_PULLUP);
+    button.setEventHandler(handleEvent);
     Serial.println("LegoLight started.");
 }
 
 void loop()
 {
     lv_task_handler();
-    // button.check();
+    button.check();
 }

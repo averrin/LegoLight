@@ -41,7 +41,7 @@ std::vector<Device> findDevices()
                 led_state1: data[3],
                 always_on0: data[4],
                 always_on1: data[5],
-                rgb_enabled: false,
+                rgb_enabled: (data[1] >> 7) & 1,
                 meta: DeviceConfig()
             };
             found_devices.push_back(d);
@@ -59,6 +59,7 @@ std::vector<Device> findDevices()
         rgb_enabled: false,
         meta: DeviceConfig()
     };
+    d.rgb_enabled = (d.config >> 7) & 1;
     found_devices.push_back(d);
 
     return found_devices;
