@@ -58,6 +58,7 @@ void setPassive(bool p)
   passive = p;
   if (passive)
   {
+    SerialUSB.println("Passive mode");
     shuffleTask.disable();
     setStatusPixel(statusPixel.Color(100, 100, 0));
   }
@@ -138,6 +139,21 @@ void I2C_RxHandler(int numBytes)
     case SET_SHUFFLE_reg:
     {
       shuffle();
+      break;
+    }
+    case SET_LEDS_reg:
+    {
+      SerialUSB.println("[i2c]: set state");
+      byte c[2];
+      externalWire.readBytes(c, 2);
+      printBin(c[0]);
+      SerialUSB.print(" ");
+      printBin(c[1]);
+      SerialUSB.println(" ");
+      ledState = c[1] << 8 | c[0];
+      printBin(ledState);
+      SerialUSB.println(" ");
+      applyState();
       break;
     }
     case SET_ALL_LEDS_reg:

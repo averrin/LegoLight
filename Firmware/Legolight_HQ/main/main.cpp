@@ -171,7 +171,8 @@ void configDevice()
     lv_label_set_text_fmt(lv_obj_get_child(device_name, 0), device.meta.name.c_str());
 
     lv_obj_clear_state(button_rgb, LV_STATE_CHECKED);
-    if(device.rgb_enabled) {
+    if (device.rgb_enabled)
+    {
         lv_obj_add_state(button_rgb, LV_STATE_CHECKED);
     }
 
@@ -179,10 +180,12 @@ void configDevice()
     {
         auto b = lv_obj_get_child(table, p);
         lv_obj_clear_state(b, LV_STATE_CHECKED);
-        if(p < 8 && ((device.led_state0 >> 7-p) & 1)) {
+        if (p < 8 && ((device.led_state0 >> 7 - p) & 1))
+        {
             lv_obj_add_state(b, LV_STATE_CHECKED);
         }
-        if(p >= 8 && ((device.led_state1 >> (15-p)) & 1)) {
+        if (p >= 8 && ((device.led_state1 >> (15 - p)) & 1))
+        {
             lv_obj_add_state(b, LV_STATE_CHECKED);
         }
     }
@@ -198,9 +201,17 @@ static void button_config_handler(lv_event_t *e)
     }
 }
 
-void deviceSelector(lv_obj_t *parent)
+static void button_shuffle_handler(lv_event_t *e)
 {
-    config = initConfig();
+    lv_event_code_t code = lv_event_get_code(e);
+    if (code == LV_EVENT_CLICKED)
+    {
+        broadcast(0x03, nullptr, 0);
+    }
+}
+
+void updateDevices()
+{
     found_devices = findDevices();
 
     for (auto &device : found_devices)
@@ -214,13 +225,42 @@ void deviceSelector(lv_obj_t *parent)
             }
         }
     }
+}
 
-    lv_obj_t *led3 = lv_led_create(parent);
-    lv_led_set_color(led3, lv_palette_main(LV_PALETTE_GREEN));
-    lv_led_on(led3);
-    lv_obj_set_grid_cell(led3,
-                         LV_GRID_ALIGN_CENTER, 0, 1,
-                         LV_GRID_ALIGN_CENTER, 1, 1);
+static void button_shuffle_device_handler(lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    if (code == LV_EVENT_CLICKED)
+    {
+        auto device = found_devices[device_index];
+        sendCommand(device.address, 0x03, nullptr, 0);
+        updateDevices();
+        configDevice();
+    }
+}
+
+void deviceSelector(lv_obj_t *parent)
+{
+    config = initConfig();
+    updateDevices();
+    if (found_devices.size() == 0)
+    {
+        auto warn = textWidget(parent);
+        lv_label_set_text_fmt(lv_obj_get_child(warn, 0), "No devices found");
+        lv_obj_set_grid_cell(warn,
+                             LV_GRID_ALIGN_CENTER, 0, 3,
+                             LV_GRID_ALIGN_CENTER, 2, 1);
+        return;
+    }
+
+    // lv_obj_t *led3 = lv_led_create(parent);
+    // lv_led_set_color(led3, lv_palette_main(LV_PALETTE_GREEN));
+    // lv_led_on(led3);
+    // lv_obj_set_grid_cell(led3,
+    //                      LV_GRID_ALIGN_CENTER, 0, 1,
+    //                      LV_GRID_ALIGN_CENTER, 1, 1);
+    auto button_shuffle = insertButton(parent, LV_SYMBOL_SHUFFLE, 0, 1);
+    lv_obj_add_event_cb(button_shuffle, button_shuffle_handler, LV_EVENT_ALL, NULL);
 
     button_toggle = insertButton(parent, "OFF", 2, 1);
     lv_obj_add_flag(button_toggle, LV_OBJ_FLAG_CHECKABLE);
@@ -254,6 +294,29 @@ static void button_home_handler(lv_event_t *e)
     if (code == LV_EVENT_CLICKED)
     {
         shell.activate("home");
+    }
+}
+
+static void button_pin_toggle_handler(lv_event_t *e)
+{
+    lv_event_code_t code = lv_event_get_code(e);
+    int p = (int)lv_event_get_user_data(e);
+    // if (code == LV_EVENT_CLICKED)
+    if (code == LV_EVENT_VALUE_CHANGED)
+    {
+        auto device = found_devices[device_index];
+        if (p < 8)
+        {
+            device.led_state0 ^= 1 << (7 - p);
+        }
+        else
+        {
+            device.led_state1 ^= 1 << (15 - p);
+        }
+        auto data = new uint8_t[2];
+        data[0] = device.led_state0;
+        data[1] = device.led_state1;
+        sendCommand(device.address, 0x05, data, 2);
     }
 }
 
@@ -308,7 +371,8 @@ lv_obj_t *deviceConfigScreen(lv_obj_t *parent)
     auto button_back = insertButton(cont, LV_SYMBOL_LEFT, 0, 2);
     lv_obj_add_event_cb(button_back, button_home_handler, LV_EVENT_ALL, NULL);
 
-    insertButton(cont, LV_SYMBOL_SHUFFLE, 1, 2);
+    auto button_shuffle = insertButton(cont, LV_SYMBOL_SHUFFLE, 1, 2);
+    lv_obj_add_event_cb(button_shuffle, button_shuffle_device_handler, LV_EVENT_ALL, NULL);
     insertButton(cont, LV_SYMBOL_SAVE, 2, 2);
 
     lv_coord_t bs = 82;
@@ -335,6 +399,7 @@ lv_obj_t *deviceConfigScreen(lv_obj_t *parent)
         lv_obj_add_style(b, &style_btn, 0);
         lv_obj_add_style(b, &style_btn_checked, LV_STATE_CHECKED);
 
+        lv_obj_add_event_cb(b, button_pin_toggle_handler, LV_EVENT_ALL, (void *)p);
     }
 
     lv_obj_set_grid_cell(table,

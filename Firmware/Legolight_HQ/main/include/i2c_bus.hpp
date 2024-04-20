@@ -2,18 +2,23 @@
 #include "include/device.hpp"
 #include <vector>
 
+void sendCommand(int addr, uint8_t reg, uint8_t data[], uint8_t length)
+{
+    Wire.beginTransmission(addr);
+    Wire.write(reg);
+    for (auto j = 0; j < length; j++)
+    {
+        Wire.write(data[j]);
+    }
+    Wire.endTransmission();
+}
+
 void broadcast(uint8_t reg, uint8_t data[], uint8_t length)
 {
     auto addr = I2C_ADDR_BASE;
     for (auto i = 0; i < 4; i++)
     {
-        Wire.beginTransmission(addr);
-        Wire.write(reg);
-        for (auto j = 0; j < length; j++)
-        {
-            Wire.write(data[j]);
-        }
-        Wire.endTransmission();
+        sendCommand(addr, reg, data, length);
         addr++;
     }
 }
@@ -34,33 +39,33 @@ std::vector<Device> findDevices()
             Wire.readBytes(data, answer_len);
 
             auto d = Device{
-                address: address,
-                version: data[0],
-                config: data[1],
-                led_state0: data[2],
-                led_state1: data[3],
-                always_on0: data[4],
-                always_on1: data[5],
-                rgb_enabled: (data[1] >> 7) & 1,
-                meta: DeviceConfig()
+                address : address,
+                version : data[0],
+                config : data[1],
+                led_state0 : data[2],
+                led_state1 : data[3],
+                always_on0 : data[4],
+                always_on1 : data[5],
+                rgb_enabled : (data[1] >> 7) & 1,
+                meta : DeviceConfig()
             };
             found_devices.push_back(d);
         }
     }
 
-    auto d = Device{
-        address: 0x20,
-        version: 1,
-        config: 0b11000000,
-        led_state0: 0b11000000,
-        led_state1: 0b00000011,
-        always_on0: 0b00000000,
-        always_on1: 0b00000000,
-        rgb_enabled: false,
-        meta: DeviceConfig()
-    };
-    d.rgb_enabled = (d.config >> 7) & 1;
-    found_devices.push_back(d);
+    // auto d = Device{
+    //     address: 0x20,
+    //     version: 1,
+    //     config: 0b11000000,
+    //     led_state0: 0b11000000,
+    //     led_state1: 0b00000011,
+    //     always_on0: 0b00000000,
+    //     always_on1: 0b00000000,
+    //     rgb_enabled: false,
+    //     meta: DeviceConfig()
+    // };
+    // d.rgb_enabled = (d.config >> 7) & 1;
+    // found_devices.push_back(d);
 
     return found_devices;
 }
