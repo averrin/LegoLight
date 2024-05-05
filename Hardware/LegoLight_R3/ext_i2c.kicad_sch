@@ -2085,7 +2085,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" " 771-PCA9306DP-T"
+		(property "Mouser Part Number" "771-PCA9306DP-T"
 			(at 58.42 74.93 0)
 			(effects
 				(font
@@ -2220,7 +2220,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SnapEDA Library:ADAFRUIT_4328"
+		(property "Footprint" "SnapEDA Library:SPARKFUN_PRT-14417"
 			(at 91.44 90.17 0)
 			(effects
 				(font
@@ -2515,7 +2515,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SnapEDA Library:ADAFRUIT_4328"
+		(property "Footprint" "SnapEDA Library:SPARKFUN_PRT-14417"
 			(at 91.44 71.12 0)
 			(effects
 				(font

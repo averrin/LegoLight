@@ -53,6 +53,14 @@ uint8_t btnPin = 0;
 AceButton button(btnPin);
 bool sleep_enabled = false;
 
+void printBin(int var)
+{
+    for (unsigned int test = 0x80; test; test >>= 1)
+    {
+        Serial.write(var & test ? '1' : '0');
+    }
+}
+
 void toggleSleep()
 {
     sleep_enabled = !sleep_enabled;
@@ -307,15 +315,21 @@ static void button_pin_toggle_handler(lv_event_t *e)
         auto device = found_devices[device_index];
         if (p < 8)
         {
+            Serial.println(7 - p);
             device.led_state0 ^= 1 << (7 - p);
         }
         else
         {
+            Serial.println(15 - p);
             device.led_state1 ^= 1 << (15 - p);
         }
         auto data = new uint8_t[2];
         data[0] = device.led_state0;
         data[1] = device.led_state1;
+        printBin(data[0]);
+        Serial.print(" ");
+        printBin(data[1]);
+        Serial.println(" ");
         sendCommand(device.address, 0x05, data, 2);
     }
 }

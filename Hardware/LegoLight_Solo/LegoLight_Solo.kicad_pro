@@ -6,7 +6,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.1,
+        "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -30,22 +30,22 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.15,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 3.3,
-          "width": 3.3
+          "drill": 0.762,
+          "height": 1.524,
+          "width": 1.524
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.5
@@ -111,7 +111,7 @@
         "max_error": 0.005,
         "min_clearance": 0.0,
         "min_connection": 0.0,
-        "min_copper_edge_clearance": 0.0,
+        "min_copper_edge_clearance": 0.5,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
@@ -124,8 +124,6 @@
         "min_track_width": 0.0,
         "min_via_annular_width": 0.1,
         "min_via_diameter": 0.5,
-        "solder_mask_clearance": 0.0,
-        "solder_mask_min_width": 0.0,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -133,14 +131,14 @@
         {
           "td_onpadsmd": true,
           "td_onroundshapesonly": false,
-          "td_ontrackend": true,
+          "td_ontrackend": false,
           "td_onviapad": true
         }
       ],
       "teardrop_parameters": [
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 10,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -151,7 +149,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 10,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -162,7 +160,7 @@
         },
         {
           "td_allow_use_two_tracks": true,
-          "td_curve_segcount": 10,
+          "td_curve_segcount": 0,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -432,7 +430,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "LegoLight_R3.kicad_pro",
+    "filename": "LegoLight_Solo.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -449,26 +447,9 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.2,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "GND",
-        "pcb_color": "rgb(124, 255, 73)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       },
       {
@@ -483,55 +464,36 @@
         "name": "PWR",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.5,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
-        "wire_width": 6
-      },
-      {
-        "bus_width": 12,
-        "clearance": 0.2,
-        "diff_pair_gap": 0.25,
-        "diff_pair_via_gap": 0.25,
-        "diff_pair_width": 0.3,
-        "line_style": 0,
-        "microvia_diameter": 0.3,
-        "microvia_drill": 0.1,
-        "name": "USB",
-        "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.4,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
     "meta": {
       "version": 3
     },
-    "net_colors": {
-      "+3.3V": "rgb(190, 188, 40)",
-      "+5V": "rgb(185, 75, 166)",
-      "GND": "rgb(189, 178, 181)"
-    },
+    "net_colors": null,
     "netclass_assignments": {
       "+3.3V": "PWR",
       "+5V": "PWR",
-      "/D+": "USB",
-      "/D-": "USB"
+      "+BATT": "PWR",
+      "GND": "PWR",
+      "Net-(J4-Pin_1)": "PWR",
+      "VBUS": "PWR"
     },
     "netclass_patterns": [
-      {
-        "netclass": "GND",
-        "pattern": "GND"
-      },
       {
         "netclass": "PWR",
         "pattern": "PWR"
       },
       {
-        "netclass": "USB",
-        "pattern": "USB"
+        "netclass": "PWR",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "PWR",
+        "pattern": "+BATT"
       }
     ]
   },
@@ -591,6 +553,18 @@
         },
         {
           "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Qty",
+          "name": "${QUANTITY}",
+          "show": true
+        },
+        {
+          "group_by": true,
           "label": "DNP",
           "name": "${DNP}",
           "show": false
@@ -603,8 +577,32 @@
         },
         {
           "group_by": false,
-          "label": "MANUFACTURER",
-          "name": "MANUFACTURER",
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
           "show": false
         },
         {
@@ -621,40 +619,22 @@
         },
         {
           "group_by": false,
-          "label": "SNAPEDA_PN",
-          "name": "SNAPEDA_PN",
-          "show": false
-        },
-        {
-          "group_by": false,
           "label": "STANDARD",
           "name": "STANDARD",
           "show": false
         },
         {
           "group_by": false,
-          "label": "Description",
-          "name": "Description",
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
           "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Mouser Part Number",
-          "name": "Mouser Part Number",
-          "show": true
-        },
-        {
-          "group_by": false,
-          "label": "Qty",
-          "name": "${QUANTITY}",
-          "show": true
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -684,14 +664,6 @@
       "version": 1
     },
     "net_format_name": "",
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "spice_current_sheet_as_root": false,
@@ -705,28 +677,8 @@
   },
   "sheets": [
     [
-      "b7df49f9-2249-4c59-91c1-22f2b0733f01",
+      "792b6101-f9a6-422e-8ff8-b9286d230e7e",
       "Root"
-    ],
-    [
-      "5f35dde9-3dff-4359-bc4f-e8a9334ecbef",
-      "Power"
-    ],
-    [
-      "71a62b63-7f48-40c4-b327-ba378d7e3a33",
-      "USB"
-    ],
-    [
-      "07c53a43-a0c6-4660-9e1e-eadf9870c194",
-      "I2C ext"
-    ],
-    [
-      "bd34acf6-f7f5-4a5e-b604-4ec4b8b2120a",
-      "Buttons"
-    ],
-    [
-      "0be0468a-5950-48a5-8c19-4d6a41bde6a5",
-      "LED Driver"
     ]
   ],
   "text_variables": {}

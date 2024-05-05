@@ -4,7 +4,7 @@
 #include <Adafruit_PWMServoDriver.h>
 Adafruit_PWMServoDriver pwm = Adafruit_PWMServoDriver(PCA9685_I2C_ADDRESS, internalWire);
 
-u_int16_t shuffleTime = 8000;
+u_int16_t shuffleTime = 8000 * 60;
 u_int16_t old_ledState = 0;
 u_int16_t ledState = 0;
 u_int16_t alwaysOn = 1;

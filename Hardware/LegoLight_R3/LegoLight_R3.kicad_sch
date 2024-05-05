@@ -525,174 +525,6 @@
 				)
 			)
 		)
-		(symbol "Connector_Generic:Conn_01x03"
-			(pin_names
-				(offset 1.016) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Conn_01x03"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "connector"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Conn_01x03_1_1"
-				(rectangle
-					(start -1.27 -2.413)
-					(end 0 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 0.127)
-					(end 0 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 2.667)
-					(end 0 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -1.27 3.81)
-					(end 1.27 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at -5.08 2.54 0)
-					(length 3.81)
-					(name "Pin_1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 3.81)
-					(name "Pin_2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -2.54 0)
-					(length 3.81)
-					(name "Pin_3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector_Generic:Conn_01x04"
 			(pin_names
 				(offset 1.016) hide)
@@ -1289,260 +1121,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
-		(symbol "LED:SK6812"
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 5.08 5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right bottom)
-				)
-			)
-			(property "Value" "SK6812"
-				(at 1.27 -5.715 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-				(at 1.27 -7.62 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-				(at 2.54 -9.525 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RGB LED with integrated controller"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "RGB LED NeoPixel addressable"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "LED*SK6812*PLCC*5.0x5.0mm*P3.2mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "SK6812_0_0"
-				(text "RGB"
-					(at 2.286 -4.191 0)
-					(effects
-						(font
-							(size 0.762 0.762)
-						)
-					)
-				)
-			)
-			(symbol "SK6812_0_1"
-				(polyline
-					(pts
-						(xy 1.27 -3.556) (xy 1.778 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -2.54) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -3.556) (xy 2.667 -3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 5.08 5.08)
-					(end -5.08 -5.08)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "SK6812_1_1"
-				(pin power_in line
-					(at 0 -7.62 90)
-					(length 2.54)
-					(name "VSS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 0 0)
-					(length 2.54)
-					(name "DIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 0 7.62 270)
-					(length 2.54)
-					(name "VDD"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "DOUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2777,52 +2355,32 @@
 				)
 			)
 		)
-		(symbol "TL3305AF160QG:TL3305AF160QG"
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
 			(pin_names
 				(offset 1.016) hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "S"
-				(at -5.08 8.89 0)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
+					(justify left)
 				)
 			)
-			(property "Value" "TL3305AF160QG"
-				(at -5.08 -7.62 0)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 				)
 			)
-			(property "Footprint" "SnapEDA Library:SW_TL3305AF160QG"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
+			(property "Footprint" ""
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -2830,71 +2388,40 @@
 					(hide yes)
 				)
 			)
-			(property "PARTREV" "C"
-				(at 0 0 0)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
-			(property "SNAPEDA_PN" "TL3305AF160QG"
+			(property "Description" "Push button switch, generic, two pins"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
-			(property "MANUFACTURER" "E-Switch"
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
 				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left bottom)
 					(hide yes)
 				)
 			)
-			(property "MAXIMUM_PACKAGE_HEIGHT" "3.8 mm"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "STANDARD" "Manufacturer Recommendations"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left bottom)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "TL3305AF160QG_0_0"
+			(symbol "SW_Push_0_1"
 				(circle
-					(center -2.54 0)
-					(radius 0.254)
+					(center -2.032 0)
+					(radius 0.508)
 					(stroke
-						(width 0.508)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -2902,11 +2429,11 @@
 				)
 				(polyline
 					(pts
-						(xy -7.62 -5.08) (xy -5.08 -5.08)
+						(xy 0 1.27) (xy 0 3.048)
 					)
 					(stroke
-						(width 0.1524)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
@@ -2914,229 +2441,471 @@
 				)
 				(polyline
 					(pts
-						(xy -7.62 5.08) (xy -5.08 5.08)
+						(xy 2.54 1.27) (xy -2.54 1.27)
 					)
 					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -5.08) (xy -5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy -5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 1.27) (xy 0 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 0 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 3.81 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 -5.08) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 0) (xy 5.08 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 5.08) (xy 7.62 5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 -5.08) (xy 5.08 -5.08)
-					)
-					(stroke
-						(width 0.1524)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
 				(circle
-					(center 2.54 0)
-					(radius 0.254)
+					(center 2.032 0)
+					(radius 0.508)
 					(stroke
-						(width 0.508)
-						(type solid)
+						(width 0)
+						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
 				(pin passive line
-					(at 10.16 -5.08 180)
+					(at -5.08 0 0)
 					(length 2.54)
-					(name "~"
+					(name "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "1"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at 10.16 5.08 180)
+					(at 5.08 0 180)
 					(length 2.54)
-					(name "~"
+					(name "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "2"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "mousser:103R012BB100"
+			(pin_names
+				(offset 0.762)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 24.13 12.7 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "103R012BB100"
+				(at 24.13 10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "103R012BB100"
+				(at 24.13 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/103rxxxbb10x.pdf"
+				(at 24.13 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Description" "12 Position Connector Receptacle, Center Strip Contacts Surface Mount Gold"
+				(at 24.13 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Height" "0.68"
+				(at 24.13 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "649-103R012BB100"
+				(at 24.13 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Aorora/103R012BB100?qs=pBJMDPsKWf3jqgnw7u7Lpg%3D%3D"
+				(at 24.13 -5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Amphenol"
+				(at 24.13 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "103R012BB100"
+				(at 24.13 -10.16 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+					(hide yes)
+				)
+			)
+			(symbol "103R012BB100_0_0"
+				(pin passive line
+					(at 7.62 -15.24 90)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at -10.16 -5.08 0)
-					(length 2.54)
-					(name "~"
+					(at 17.78 12.7 270)
+					(length 5.08)
+					(name "10"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 -15.24 90)
+					(length 5.08)
+					(name "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "11"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 20.32 12.7 270)
+					(length 5.08)
+					(name "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "12"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 12.7 270)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -15.24 90)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "3"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 				)
 				(pin passive line
-					(at -10.16 5.08 0)
-					(length 2.54)
-					(name "~"
+					(at 10.16 12.7 270)
+					(length 5.08)
+					(name "4"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
 					)
 					(number "4"
 						(effects
 							(font
-								(size 1.016 1.016)
+								(size 1.27 1.27)
 							)
 						)
+					)
+				)
+				(pin passive line
+					(at 12.7 -15.24 90)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 12.7 12.7 270)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 -15.24 90)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 15.24 12.7 270)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 17.78 -15.24 90)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "MP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "MP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 -2.54 180)
+					(length 5.08)
+					(name "MP3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 27.94 0 180)
+					(length 5.08)
+					(name "MP4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "MP4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "103R012BB100_0_1"
+				(polyline
+					(pts
+						(xy 5.08 7.62) (xy 22.86 7.62) (xy 22.86 -10.16) (xy 5.08 -10.16) (xy 5.08 7.62)
+					)
+					(stroke
+						(width 0.1524)
+						(type solid)
+					)
+					(fill
+						(type none)
 					)
 				)
 			)
@@ -3477,12 +3246,162 @@
 				)
 			)
 		)
+		(symbol "power:VBUS"
+			(power)
+			(pin_numbers hide)
+			(pin_names
+				(offset 0) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VBUS"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VBUS\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VBUS_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VBUS_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+	)
+	(junction
+		(at 257.81 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0423b239-982b-437d-a861-de383353c4d3")
+	)
+	(junction
+		(at 139.7 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "11f52b73-cf1a-4d9a-9138-ae347e77255b")
+	)
+	(junction
+		(at 158.75 133.35)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2b0b07da-f846-4ab3-978f-2e616367e92e")
+	)
+	(junction
+		(at 179.07 123.19)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "3fcbf2f6-2c3c-4872-b693-ec653de37c02")
 	)
 	(junction
 		(at 139.7 109.22)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4174a43d-4197-4e7f-879c-26132fb4e796")
+	)
+	(junction
+		(at 139.7 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "46a9db82-02e2-42e0-b7fa-23034bb980bf")
 	)
 	(junction
 		(at 48.26 87.63)
@@ -3497,16 +3416,22 @@
 		(uuid "5e158105-63ab-4d73-bc7a-84d6df2e145a")
 	)
 	(junction
-		(at 232.41 39.37)
+		(at 207.01 123.19)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "62f13db9-59c2-428d-a90a-6d8619e4284e")
+		(uuid "7dae595a-eae0-436b-ab64-065040075207")
 	)
 	(junction
 		(at 62.23 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7db54aa2-5170-409f-8809-bedba8cfaed1")
+	)
+	(junction
+		(at 229.87 121.92)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7e31ad82-6da5-494d-a004-9dbc1ae27e19")
 	)
 	(junction
 		(at 64.77 140.97)
@@ -3550,19 +3475,9 @@
 		(color 0 0 0 0)
 		(uuid "dffaf4b1-10ee-48ad-9485-5563a91922fe")
 	)
-	(junction
-		(at 252.73 29.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f12631d6-7112-44e4-9c19-7402b8999579")
-	)
 	(no_connect
 		(at 219.71 40.64)
 		(uuid "59a08bc0-445f-4905-aa66-f4cae79e4260")
-	)
-	(no_connect
-		(at 125.73 73.66)
-		(uuid "a5d87564-a61e-45d7-bd18-b664ba85a1a5")
 	)
 	(no_connect
 		(at 219.71 38.1)
@@ -3597,16 +3512,6 @@
 			(type default)
 		)
 		(uuid "03612b21-00c8-477a-960b-1780dfd5e497")
-	)
-	(wire
-		(pts
-			(xy 48.26 125.73) (xy 48.26 124.46)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "07b7774b-edce-44d6-aa5e-c778c7a18b31")
 	)
 	(wire
 		(pts
@@ -3657,6 +3562,16 @@
 			(type default)
 		)
 		(uuid "0d2aa446-f7a4-48cc-976b-fa4ad665b28e")
+	)
+	(wire
+		(pts
+			(xy 207.01 120.65) (xy 207.01 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "11dce606-2588-45ec-9e06-069d7cb51f27")
 	)
 	(wire
 		(pts
@@ -3717,6 +3632,16 @@
 			(type default)
 		)
 		(uuid "1fe361c8-0881-45de-bf8e-bb96b39ab17a")
+	)
+	(wire
+		(pts
+			(xy 139.7 125.73) (xy 151.13 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21420b37-f5f4-4b4a-aa46-bc40b553bb87")
 	)
 	(wire
 		(pts
@@ -3820,7 +3745,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 39.37) (xy 232.41 43.18)
+			(xy 232.41 29.21) (xy 232.41 43.18)
 		)
 		(stroke
 			(width 0.1524)
@@ -3850,16 +3775,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 20.32) (xy 252.73 29.21)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "535ba4bc-8b15-4ff4-8c3a-b0ca9d7f63ed")
-	)
-	(wire
-		(pts
 			(xy 45.72 22.86) (xy 46.99 22.86)
 		)
 		(stroke
@@ -3880,23 +3795,23 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 29.21) (xy 252.73 39.37)
+			(xy 158.75 133.35) (xy 158.75 137.16)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "684821ab-d504-47bc-958b-506077055e71")
+	)
+	(wire
+		(pts
+			(xy 252.73 20.32) (xy 252.73 39.37)
 		)
 		(stroke
 			(width 0.1524)
 			(type solid)
 		)
 		(uuid "68d421e0-dcbd-455e-aba1-6e2c02a4d3db")
-	)
-	(wire
-		(pts
-			(xy 163.83 38.1) (xy 170.18 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6b939b8e-f5bf-482a-96c2-e9413d56a3d4")
 	)
 	(wire
 		(pts
@@ -3910,6 +3825,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 119.38) (xy 229.87 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6d2f2567-afa8-4d1f-b893-39eeefbcd887")
+	)
+	(wire
+		(pts
 			(xy 30.48 29.21) (xy 31.75 29.21)
 		)
 		(stroke
@@ -3917,6 +3842,46 @@
 			(type default)
 		)
 		(uuid "6e020ed2-3fb8-44d9-bd8e-a8d76ccd90c2")
+	)
+	(wire
+		(pts
+			(xy 247.65 39.37) (xy 252.73 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "754f91af-acf8-4046-8c08-e242a3ae3ab1")
+	)
+	(wire
+		(pts
+			(xy 189.23 135.89) (xy 189.23 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79555f68-55b5-4e2c-9e04-a64fa61ee4e4")
+	)
+	(wire
+		(pts
+			(xy 127 133.35) (xy 139.7 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7aec1411-414b-4725-986c-f4c0ebfa4758")
+	)
+	(wire
+		(pts
+			(xy 242.57 134.62) (xy 242.57 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7c3bf66f-6241-405a-a091-d9cad16fbc94")
 	)
 	(wire
 		(pts
@@ -3930,6 +3895,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 119.38) (xy 257.81 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d37aa0a-f63c-47ff-a80b-2fe260c019c6")
+	)
+	(wire
+		(pts
 			(xy 48.26 86.36) (xy 48.26 87.63)
 		)
 		(stroke
@@ -3937,6 +3912,26 @@
 			(type solid)
 		)
 		(uuid "7ed0d0d8-88cb-427d-92da-bd6197790950")
+	)
+	(wire
+		(pts
+			(xy 179.07 120.65) (xy 179.07 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "813f03ce-3ba8-4de6-8e67-99d0326864ca")
+	)
+	(wire
+		(pts
+			(xy 240.03 134.62) (xy 240.03 142.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81742fc7-c6f5-4f29-ab1d-02f618ed0238")
 	)
 	(wire
 		(pts
@@ -3960,16 +3955,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 40.64) (xy 170.18 43.18)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "8b0c472b-187d-4a01-84af-0b848398fbf8")
-	)
-	(wire
-		(pts
 			(xy 53.34 111.76) (xy 53.34 115.57)
 		)
 		(stroke
@@ -3990,6 +3975,16 @@
 	)
 	(wire
 		(pts
+			(xy 191.77 135.89) (xy 191.77 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f87160f-808c-4ee2-aa55-1f866e4a164d")
+	)
+	(wire
+		(pts
 			(xy 205.74 54.61) (xy 205.74 58.42)
 		)
 		(stroke
@@ -3997,6 +3992,26 @@
 			(type default)
 		)
 		(uuid "918ed29c-8da9-414a-ad93-f9212584d8ba")
+	)
+	(wire
+		(pts
+			(xy 158.75 125.73) (xy 158.75 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98d165fe-3217-42e2-9d57-6acec08d1ce7")
+	)
+	(wire
+		(pts
+			(xy 247.65 34.29) (xy 247.65 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "99ee2a57-a097-472b-b5bb-6edda54d27bd")
 	)
 	(wire
 		(pts
@@ -4027,6 +4042,16 @@
 			(type solid)
 		)
 		(uuid "a0bafb4c-dbf1-4e7d-a3ad-9326d5e3d272")
+	)
+	(wire
+		(pts
+			(xy 237.49 29.21) (xy 237.49 34.29)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "a31e565d-1fe6-4b06-92e4-0ae8f833f478")
 	)
 	(wire
 		(pts
@@ -4100,6 +4125,26 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 123.19) (xy 207.01 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c68f33c3-e5b1-4722-907b-52edc07da833")
+	)
+	(wire
+		(pts
+			(xy 229.87 121.92) (xy 229.87 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c695c1bb-6ca6-42ea-a214-891ba6e49d7f")
+	)
+	(wire
+		(pts
 			(xy 158.75 109.22) (xy 158.75 113.03)
 		)
 		(stroke
@@ -4117,6 +4162,16 @@
 			(type default)
 		)
 		(uuid "c85e4f26-5b4b-4af0-a4ff-19f1505f3235")
+	)
+	(wire
+		(pts
+			(xy 232.41 29.21) (xy 237.49 29.21)
+		)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(uuid "cc84b8b3-fcdb-466e-b7ec-9574884776f0")
 	)
 	(wire
 		(pts
@@ -4150,6 +4205,26 @@
 	)
 	(wire
 		(pts
+			(xy 139.7 133.35) (xy 151.13 133.35)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cf79ae5c-e620-42b5-9005-c88485bb738e")
+	)
+	(wire
+		(pts
+			(xy 179.07 123.19) (xy 179.07 132.08)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d01cd57a-8a67-47c9-b073-94d78b801367")
+	)
+	(wire
+		(pts
 			(xy 87.63 87.63) (xy 87.63 92.71)
 		)
 		(stroke
@@ -4170,16 +4245,6 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 29.21) (xy 170.18 38.1)
-		)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(uuid "d7dbf12a-75ed-4af3-b451-8a57a64d9809")
-	)
-	(wire
-		(pts
 			(xy 127 109.22) (xy 139.7 109.22)
 		)
 		(stroke
@@ -4187,26 +4252,6 @@
 			(type default)
 		)
 		(uuid "daa4ec8f-1478-424a-8f21-bdfefb83053b")
-	)
-	(wire
-		(pts
-			(xy 40.64 128.27) (xy 40.64 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dab7b716-d562-4b3b-b01d-956e0b115045")
-	)
-	(wire
-		(pts
-			(xy 40.64 125.73) (xy 48.26 125.73)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dce1d5dc-38da-4ba7-a105-c80aeee4bf0e")
 	)
 	(wire
 		(pts
@@ -4230,6 +4275,16 @@
 	)
 	(wire
 		(pts
+			(xy 257.81 121.92) (xy 257.81 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1e78607-6b1a-4c40-8ae8-41c4cc81777a")
+	)
+	(wire
+		(pts
 			(xy 53.34 92.71) (xy 53.34 95.25)
 		)
 		(stroke
@@ -4247,16 +4302,6 @@
 			(type solid)
 		)
 		(uuid "e772aba9-b664-48d1-9963-4a1d83e7feee")
-	)
-	(wire
-		(pts
-			(xy 163.83 40.64) (xy 170.18 40.64)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e791c74e-f4b7-4214-bc93-af41ce2ea51d")
 	)
 	(wire
 		(pts
@@ -4310,13 +4355,13 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 29.21) (xy 232.41 39.37)
+			(xy 127 125.73) (xy 139.7 125.73)
 		)
 		(stroke
-			(width 0.1524)
-			(type solid)
+			(width 0)
+			(type default)
 		)
-		(uuid "f4a0989a-d80d-4bd8-a931-ab589078894f")
+		(uuid "f677de39-3d58-4cb5-9c82-47c58df77706")
 	)
 	(wire
 		(pts
@@ -4401,17 +4446,6 @@
 		)
 		(uuid "0583fdcf-8087-4902-87d1-9f095ba60a1a")
 	)
-	(label "SDA_INT"
-		(at 40.64 123.19 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "0c9d90f7-8de7-4cfc-b622-4ee89e282a14")
-	)
 	(label "PA06"
 		(at 72.39 115.57 180)
 		(fields_autoplaced yes)
@@ -4422,17 +4456,6 @@
 			(justify right bottom)
 		)
 		(uuid "0d91275c-cf45-4850-8681-7eaa67156b6c")
-	)
-	(label "SDA_INT"
-		(at 163.83 35.56 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "11bbd282-8978-4d1a-bf3a-6e5e1923a028")
 	)
 	(label "~{RESET}"
 		(at 71.12 184.15 180)
@@ -4467,6 +4490,17 @@
 		)
 		(uuid "13d83e7d-1780-41d7-b8fd-a42e748c5532")
 	)
+	(label "PA02"
+		(at 199.39 135.89 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "15ff1ac2-8183-4edf-bd68-7f6e5184daa9")
+	)
 	(label "~{RESET}"
 		(at 219.71 27.94 0)
 		(fields_autoplaced yes)
@@ -4477,6 +4511,17 @@
 			(justify left bottom)
 		)
 		(uuid "175c0e48-8686-4149-9065-6e3cac499cf8")
+	)
+	(label "PA02"
+		(at 182.88 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "1bf75494-e56e-4c6d-9609-e15311cbec52")
 	)
 	(label "SDA_INT"
 		(at 114.3 30.48 180)
@@ -4489,6 +4534,17 @@
 		)
 		(uuid "1d40a8d1-a8a0-4ea8-8f4c-d012a8242a4e")
 	)
+	(label "SCL"
+		(at 191.77 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1ff15597-f823-4fec-860f-f2c003d19ba2")
+	)
 	(label "STATUS_LED"
 		(at 31.75 16.51 0)
 		(fields_autoplaced yes)
@@ -4500,8 +4556,19 @@
 		)
 		(uuid "249c0a5c-5dc7-4bd5-94b4-02222d5b1e3f")
 	)
-	(label "PA05"
-		(at 142.24 130.81 180)
+	(label "SDA"
+		(at 73.66 21.59 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "25ea3c77-9c48-40ac-9263-5f21c8a98351")
+	)
+	(label "PA04"
+		(at 194.31 135.89 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4509,9 +4576,20 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "2cfd5c03-40a1-42bf-b391-f36a0d05098c")
+		(uuid "2a3e87cf-5f81-48c5-8c48-294beadf4ec8")
 	)
-	(label "RGB"
+	(label "PA27"
+		(at 182.88 54.61 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "3136dae9-03e3-44a2-b94e-0434a74ee552")
+	)
+	(label "PA28"
 		(at 72.39 171.45 180)
 		(fields_autoplaced yes)
 		(effects
@@ -4543,6 +4621,17 @@
 			(justify right bottom)
 		)
 		(uuid "3f842948-c6dc-4f59-b625-f72ee208e666")
+	)
+	(label "SDA_INT"
+		(at 189.23 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "44181b9f-69f4-49e0-9262-a501a469be75")
 	)
 	(label "PA01"
 		(at 127 109.22 180)
@@ -4577,16 +4666,38 @@
 		)
 		(uuid "4ae90e83-e45e-40d0-ad26-3107072f0bcf")
 	)
-	(label "SCL_INT"
-		(at 163.83 33.02 0)
+	(label "PA05"
+		(at 245.11 134.62 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.889 0.889)
 			)
+			(justify right bottom)
+		)
+		(uuid "55d91637-709a-4432-b481-e30ae0c33baf")
+	)
+	(label "SCL"
+		(at 68.58 19.05 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
 			(justify left bottom)
 		)
-		(uuid "59b8e39f-e878-4a87-9a35-cde36832452e")
+		(uuid "5a37581a-2175-4439-8499-0ec095344dc4")
+	)
+	(label "PA07"
+		(at 250.19 134.62 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "60fa911f-1d8c-416a-bc70-d4e86014ca76")
 	)
 	(label "D+"
 		(at 72.39 163.83 180)
@@ -4621,8 +4732,8 @@
 		)
 		(uuid "6586cf28-e09d-4121-8a0a-4760a45d17d1")
 	)
-	(label "SCL_INT"
-		(at 40.64 120.65 0)
+	(label "TX"
+		(at 196.85 107.95 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4630,7 +4741,7 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "68ff32d6-1211-489e-a7fe-debaf63e41ed")
+		(uuid "66ef6741-f7e6-4843-b663-1466c4b840ed")
 	)
 	(label "PA11"
 		(at 72.39 128.27 180)
@@ -4676,16 +4787,16 @@
 		)
 		(uuid "7035a24b-cb5a-4c0e-9f31-8b6036aba995")
 	)
-	(label "RGB"
-		(at 110.49 73.66 180)
+	(label "RX"
+		(at 199.39 107.95 90)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 0.889 0.889)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "70b73aa7-c26b-4721-a02e-ca504db64d7a")
+		(uuid "70e562c1-b59f-488d-b4ac-eaf1a9e7a416")
 	)
 	(label "PA03"
 		(at 72.39 107.95 180)
@@ -4721,6 +4832,17 @@
 		(uuid "7c5e35e1-6cd1-4a70-8f8c-2a55880ebebb")
 	)
 	(label "SCL_INT"
+		(at 186.69 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "7f2657b8-e66a-4433-90eb-4e15323d8532")
+	)
+	(label "SCL_INT"
 		(at 85.09 20.32 0)
 		(fields_autoplaced yes)
 		(effects
@@ -4752,6 +4874,17 @@
 			(justify right bottom)
 		)
 		(uuid "8c705463-beea-4850-bb74-5c0a6078c790")
+	)
+	(label "SDA"
+		(at 194.31 107.95 90)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8c8fe863-d527-4672-99f3-2d8e940200cf")
 	)
 	(label "SCL_ext_mcu"
 		(at 45.72 22.86 180)
@@ -4797,6 +4930,17 @@
 		)
 		(uuid "8e2c4961-f01b-4a49-9860-85f281d8c1c8")
 	)
+	(label "PA06"
+		(at 247.65 134.62 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "930185b5-5e7e-411d-b292-afb1eaa1779e")
+	)
 	(label "D-"
 		(at 31.75 29.21 0)
 		(fields_autoplaced yes)
@@ -4807,6 +4951,28 @@
 			(justify left bottom)
 		)
 		(uuid "a119d46f-678a-4e02-b9a6-aaa15ebcff29")
+	)
+	(label "PA15"
+		(at 127 133.35 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "a36b2291-9146-4f0b-bca8-00b08cbc242f")
+	)
+	(label "PA03"
+		(at 196.85 135.89 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "a761f884-89ce-4880-9548-f784a05fbd23")
 	)
 	(label "SWCLK"
 		(at 72.39 176.53 180)
@@ -4863,17 +5029,6 @@
 		)
 		(uuid "c78ee6b9-663f-42b9-9e21-79962ac91e8e")
 	)
-	(label "PA02"
-		(at 182.88 57.15 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "c84acb86-07b7-4f98-8457-2d0d8e063bcc")
-	)
 	(label "A1"
 		(at 67.31 25.4 0)
 		(fields_autoplaced yes)
@@ -4885,8 +5040,8 @@
 		)
 		(uuid "cd2de62f-2c0a-4d50-833c-9928c2269846")
 	)
-	(label "PA06"
-		(at 142.24 128.27 180)
+	(label "PA14"
+		(at 127 125.73 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4894,18 +5049,7 @@
 			)
 			(justify right bottom)
 		)
-		(uuid "d1210bb4-59c1-4899-999b-241c00b6f58e")
-	)
-	(label "PA27"
-		(at 182.88 54.61 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "d2e4e69f-3202-4085-afe8-0766cfc726ca")
+		(uuid "d3bdec58-e73b-4f46-a18f-7c3e06967b77")
 	)
 	(label "SDA_INT"
 		(at 45.72 41.91 180)
@@ -4961,17 +5105,6 @@
 			(justify right bottom)
 		)
 		(uuid "ed615ddc-0828-435e-ad18-69a8fb11c571")
-	)
-	(label "PA07"
-		(at 142.24 125.73 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right bottom)
-		)
-		(uuid "f7d2536a-20cc-4b79-8c8b-103d62d26251")
 	)
 	(label "A0"
 		(at 72.39 146.05 180)
@@ -5029,72 +5162,6 @@
 		(uuid "ff111879-2f14-453b-a5f5-3811056cb817")
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 118.11 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "01575ee4-24d9-4e2a-96e5-337d54daa715")
-		(property "Reference" "#PWR03"
-			(at 118.11 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 118.11 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "60b2392f-c98a-42ee-90ef-b655c849a9d9")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR03")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "SparkFun_Qwiic_Micro_SAMD21E-eagle-import:1.0UF-0402-16V-10%")
 		(at 156.21 109.22 90)
 		(unit 1)
@@ -5121,7 +5188,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 156.21 109.22 0)
 			(effects
 				(font
@@ -5167,72 +5234,6 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 118.11 81.28 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "0a5742dc-3c5b-4018-979e-64895f5aa12f")
-		(property "Reference" "#PWR020"
-			(at 118.11 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 118.11 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "348a9530-2802-447f-bcad-877b59542a4b")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -5384,34 +5385,18 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 35.56 125.73 180)
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 158.75 137.16 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "17a41a9e-71db-461e-9a5b-bbcbe1c045ea")
-		(property "Reference" "J3"
-			(at 33.02 121.92 0)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Value" "I2C"
-			(at 33.02 120.65 0)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left top)
-			)
-		)
-		(property "Footprint" "SnapEDA Library:ADAFRUIT_4328"
-			(at 35.56 125.73 0)
+		(fields_autoplaced yes)
+		(uuid "11229092-5af6-416f-af77-d090f43fd815")
+		(property "Reference" "#PWR048"
+			(at 158.75 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5419,8 +5404,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 35.56 125.73 0)
+		(property "Value" "GND"
+			(at 158.75 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 158.75 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5428,8 +5421,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 35.56 125.73 0)
+		(property "Datasheet" ""
+			(at 158.75 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5437,8 +5430,8 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "485-4328"
-			(at 35.56 125.73 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 158.75 137.16 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5447,21 +5440,91 @@
 			)
 		)
 		(pin "1"
-			(uuid "697709d9-c916-4c09-b5da-b813e9fef38c")
-		)
-		(pin "2"
-			(uuid "c8637d75-a9ad-495a-828a-321821e6205e")
-		)
-		(pin "3"
-			(uuid "a73cd90d-a707-4685-b937-c2a821a49f43")
-		)
-		(pin "4"
-			(uuid "064d0fec-aff7-47b4-ade2-bac65f8e6c84")
+			(uuid "f60c41a0-e375-4cee-89dd-3a8ac316ae30")
 		)
 		(instances
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "J3")
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Crystal")
+		(at 139.7 129.54 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15fc5582-16ce-4699-ba24-9c1ed87a5db6")
+		(property "Reference" "Y2"
+			(at 143.51 128.2699 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "32.768 kHz"
+			(at 143.51 130.8099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Two pin crystal"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "815-ABS06-32.768K-T"
+			(at 139.7 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "88da46cf-f38f-4cd9-b121-6756d8f4e022")
+		)
+		(pin "2"
+			(uuid "fccfaf4c-3bea-470c-8589-1f01a442105c")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "Y2")
 					(unit 1)
 				)
 			)
@@ -5546,6 +5609,73 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 207.01 132.08 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "201c8a91-1a08-4f04-8943-c5b8fc29d832")
+		(property "Reference" "#PWR034"
+			(at 207.01 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 207.01 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 207.01 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c9ea74ab-8a66-453a-9f78-417e19701bc6")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR034")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+5V")
 		(at 186.69 53.34 0)
 		(unit 1)
@@ -5606,6 +5736,138 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "#PWR027")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 189.23 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "276b00e7-1080-45e0-84ef-6940a3563730")
+		(property "Reference" "#PWR08"
+			(at 189.23 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 189.23 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 189.23 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 189.23 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 189.23 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f1572d2-d91d-495f-8fa1-ebc522823671")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 191.77 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3203b00a-5110-4b43-85e7-bfe6ea79a984")
+		(property "Reference" "#PWR015"
+			(at 191.77 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 191.77 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 191.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 191.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 191.77 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "35681cc1-3658-404c-a8a5-e0f7972fdeb4")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -5781,34 +6043,34 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+3.3V")
-		(at 48.26 124.46 0)
+		(lib_id "SparkFun_Qwiic_Micro_SAMD21E-eagle-import:1.0UF-0402-16V-10%")
+		(at 156.21 125.73 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "441b5ebd-86a8-481b-aa69-de86c731ec71")
-		(property "Reference" "#PWR015"
-			(at 48.26 128.27 0)
+		(uuid "442d623c-bb78-43b3-b3df-b2167627ec7b")
+		(property "Reference" "C7"
+			(at 157.861 123.952 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.778 1.778)
 				)
-				(hide yes)
+				(justify left bottom)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 48.26 119.38 0)
+		(property "Value" "3pf"
+			(at 153.1112 124.9901 0)
 			(effects
 				(font
-					(size 1.27 1.27)
+					(size 1.778 1.778)
 				)
+				(justify left bottom)
 			)
 		)
-		(property "Footprint" ""
-			(at 48.26 124.46 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 156.21 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5817,7 +6079,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 48.26 124.46 0)
+			(at 156.21 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5826,7 +6088,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 48.26 124.46 0)
+			(at 156.21 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5834,13 +6096,25 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "187-CL21B105KAFNNNE"
+			(at 156.21 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "e73c2f97-c350-4971-b05b-2f60a801d93f")
+		)
 		(pin "1"
-			(uuid "dc8b97cf-b012-424f-b809-b725172c4214")
+			(uuid "9303ae03-8730-4ebd-a819-6a3432473854")
 		)
 		(instances
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR015")
+					(reference "C7")
 					(unit 1)
 				)
 			)
@@ -5987,6 +6261,140 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 257.81 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4b08909b-80dd-4eb5-9631-48af136e870f")
+		(property "Reference" "#PWR047"
+			(at 257.81 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 257.81 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 257.81 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 257.81 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 257.81 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7a30231a-7e24-4846-9df3-26ac7881141e")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 186.69 135.89 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4e1e038e-8b63-4551-a299-3c5b578d902c")
+		(property "Reference" "#PWR03"
+			(at 186.69 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 186.69 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.69 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 186.69 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 186.69 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "173b1d06-4916-449f-9bd5-b24147d56790")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector_Generic:Conn_01x04")
 		(at 177.8 59.69 180)
 		(unit 1)
@@ -6013,7 +6421,7 @@
 				(justify left top)
 			)
 		)
-		(property "Footprint" "SnapEDA Library:ADAFRUIT_4328"
+		(property "Footprint" "SnapEDA Library:SPARKFUN_PRT-14417"
 			(at 177.8 59.69 0)
 			(effects
 				(font
@@ -6130,72 +6538,6 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 170.18 43.18 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5eecd1a2-ebea-4e68-bb54-420903743078")
-		(property "Reference" "#PWR08"
-			(at 170.18 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 170.18 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c8d91db-8d6d-49df-ac46-4a92dccaeb80")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR08")
 					(unit 1)
 				)
 			)
@@ -6341,17 +6683,18 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
 		(lib_id "power:GND")
-		(at 40.64 132.08 0)
+		(at 237.49 134.62 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "644ead7a-a116-439e-9662-4e143d161263")
-		(property "Reference" "#PWR043"
-			(at 40.64 138.43 0)
+		(uuid "66f2798f-5ff4-40c6-8b84-91fe60822d3c")
+		(property "Reference" "#PWR026"
+			(at 237.49 140.97 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6360,7 +6703,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 40.64 137.16 0)
+			(at 237.49 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6368,7 +6711,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 40.64 132.08 0)
+			(at 237.49 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6377,7 +6720,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 40.64 132.08 0)
+			(at 237.49 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6385,8 +6728,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
-			(at 40.64 132.08 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 237.49 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6395,28 +6738,95 @@
 			)
 		)
 		(pin "1"
-			(uuid "b56a7043-399c-492f-9dba-849daef20e45")
+			(uuid "a7fe60c1-8edb-4544-a4a1-bda37aa23c06")
 		)
 		(instances
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR043")
+					(reference "#PWR026")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Connector_Generic:Conn_01x04")
-		(at 158.75 38.1 180)
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 179.07 132.08 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6880a8a0-8d39-4b75-bb57-10116b6e8827")
-		(property "Reference" "J6"
-			(at 156.21 31.75 0)
+		(fields_autoplaced yes)
+		(uuid "6d27577a-4179-493d-a76d-08de0dca9891")
+		(property "Reference" "#PWR033"
+			(at 179.07 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 179.07 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 179.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 179.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 179.07 132.08 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b50a9c7f-7dba-4f6e-b2cb-ebd38c66beab")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Qwiic_Micro_SAMD21E-eagle-import:1.0UF-0402-16V-10%")
+		(at 156.21 133.35 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6e98dabf-5961-4135-9dad-924090d75d89")
+		(property "Reference" "C8"
+			(at 157.861 131.572 0)
 			(effects
 				(font
 					(size 1.778 1.778)
@@ -6424,18 +6834,17 @@
 				(justify left bottom)
 			)
 		)
-		(property "Value" "I2C_INT"
-			(at 163.83 32.766 0)
+		(property "Value" "3pf"
+			(at 153.1112 132.6101 0)
 			(effects
 				(font
 					(size 1.778 1.778)
 				)
-				(justify left top)
-				(hide yes)
+				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical"
-			(at 158.75 38.1 0)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 156.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6443,8 +6852,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 158.75 38.1 0)
+		(property "Datasheet" ""
+			(at 156.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6453,7 +6862,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 158.75 38.1 0)
+			(at 156.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6461,31 +6870,25 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
-			(at 158.75 38.1 0)
+		(property "Mouser Part Number" "187-CL21B105KAFNNNE"
+			(at 156.21 133.35 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(pin "1"
-			(uuid "43a8fe88-04f0-430d-84ab-85b2ec298e85")
 		)
 		(pin "2"
-			(uuid "d3b52a00-91bc-4e3c-ae41-e651f9f2b36e")
+			(uuid "6e00bf04-bf39-4315-91b6-a304d0ecc66d")
 		)
-		(pin "3"
-			(uuid "8bb63be9-3898-4e9e-b031-0f6aa929c2df")
-		)
-		(pin "4"
-			(uuid "845af416-7369-43fd-8fae-be231e142f11")
+		(pin "1"
+			(uuid "6821507e-ac94-407f-b9c0-4ded3e4ed66e")
 		)
 		(instances
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "J6")
+					(reference "C8")
 					(unit 1)
 				)
 			)
@@ -6517,7 +6920,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5_Handsoldering"
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-353_SC-70-5"
 			(at 132.08 27.94 0)
 			(effects
 				(font
@@ -6646,6 +7049,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VBUS")
+		(at 240.03 142.24 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8b9d4d56-099e-47f7-9f3e-a6c1a2bee85c")
+		(property "Reference" "#PWR043"
+			(at 240.03 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 240.03 147.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 240.03 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 240.03 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 240.03 142.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6912fdd2-daf5-41d5-90a9-dbc55f1fbc03")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR043")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 52.07 168.91 0)
 		(unit 1)
@@ -6706,91 +7175,6 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "#PWR035")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "LED:SK6812")
-		(at 118.11 73.66 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8ea7940f-4dbe-4330-9cac-a682e65e91db")
-		(property "Reference" "D1"
-			(at 128.27 70.0121 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "SK6812"
-			(at 128.27 72.5521 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_SK6812_PLCC4_5.0x5.0mm_P3.2mm"
-			(at 119.38 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cdn-shop.adafruit.com/product-files/1138/SK6812+LED+datasheet+.pdf"
-			(at 120.65 83.185 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "485-4960"
-			(at 118.11 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ef8b5674-1c47-49d2-9f0b-87d30fdf6632")
-		)
-		(pin "3"
-			(uuid "31548688-e795-4dcb-b259-7f9a6a14a26d")
-		)
-		(pin "4"
-			(uuid "4ada1e9b-9678-4c73-a216-15102ca03251")
-		)
-		(pin "1"
-			(uuid "916a636d-8191-4e8e-a300-faf97772039e")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -6870,6 +7254,169 @@
 		)
 	)
 	(symbol
+		(lib_id "mousser:103R012BB100")
+		(at 229.87 119.38 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "93579ae4-8a7b-4672-bd28-106ac15d9171")
+		(property "Reference" "J3"
+			(at 261.62 113.0614 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "103R012BB100"
+			(at 261.62 115.6014 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mouser:103R012BB100"
+			(at 254 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/103rxxxbb10x.pdf"
+			(at 254 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12 Position Connector Receptacle, Center Strip Contacts Surface Mount Gold"
+			(at 254 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.68"
+			(at 254 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "649-103R012BB100"
+			(at 254 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Aorora/103R012BB100?qs=pBJMDPsKWf3jqgnw7u7Lpg%3D%3D"
+			(at 254 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 254 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "103R012BB100"
+			(at 254 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "MP1"
+			(uuid "74164d0f-2b7d-4d56-9c13-58f89d65bed4")
+		)
+		(pin "10"
+			(uuid "6a2753c2-9ad1-4a0f-8be5-e322fb758da9")
+		)
+		(pin "3"
+			(uuid "a2d06331-1703-4f20-92d2-9f2892e05a9f")
+		)
+		(pin "11"
+			(uuid "48f3db51-358d-415f-b461-0d7189654d57")
+		)
+		(pin "2"
+			(uuid "874a2561-5ab1-4b99-9d63-63dc16a26503")
+		)
+		(pin "5"
+			(uuid "741ac5bf-bcf7-45a1-9190-78e4272f8cf8")
+		)
+		(pin "MP2"
+			(uuid "25b66d65-e15a-4ded-a397-63fbd5d38e88")
+		)
+		(pin "8"
+			(uuid "d1cf558c-eba8-4361-8dbc-e91905d4c5a4")
+		)
+		(pin "MP4"
+			(uuid "9904f731-feff-4b66-ba1c-830ef6017ede")
+		)
+		(pin "12"
+			(uuid "8b6e76fe-7500-4d44-b1d1-e5192b6a9a7c")
+		)
+		(pin "7"
+			(uuid "6edcee0e-af71-4d13-9a2e-89e38bf45f39")
+		)
+		(pin "4"
+			(uuid "1dbc74dd-0f5f-406c-89ae-8911c6dcac6a")
+		)
+		(pin "MP3"
+			(uuid "a62a98ce-9503-45db-81c3-5f2c145cd334")
+		)
+		(pin "6"
+			(uuid "4ea83ac9-5152-4850-9965-888a0689add5")
+		)
+		(pin "9"
+			(uuid "e619f390-8303-4297-83a8-9bc1b55db713")
+		)
+		(pin "1"
+			(uuid "9d3432be-ebdc-4905-bd06-40176ac1a29d")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "J3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "SparkFun_Qwiic_Micro_SAMD21E-eagle-import:1.0UF-0402-16V-10%")
 		(at 53.34 106.68 180)
 		(unit 1)
@@ -6942,89 +7489,6 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "C6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x03")
-		(at 147.32 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9fa8de58-d31f-40ce-9873-0bc3c0dd0f18")
-		(property "Reference" "J5"
-			(at 142.24 115.062 0)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Value" "C1"
-			(at 142.24 138.176 0)
-			(effects
-				(font
-					(size 1.778 1.778)
-				)
-				(justify left bottom)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_PinHeader_1.27mm:PinHeader_1x03_P1.27mm_Vertical"
-			(at 147.32 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 147.32 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 147.32 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 147.32 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "ebabca0b-c17c-486b-b2eb-188678a72167")
-		)
-		(pin "1"
-			(uuid "7b2cd4d2-dd8e-47ab-af1e-4d61f99fb3e2")
-		)
-		(pin "3"
-			(uuid "e476c439-d337-4c5f-b836-321fb266e4a3")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "J5")
 					(unit 1)
 				)
 			)
@@ -7176,6 +7640,73 @@
 		)
 	)
 	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 229.87 130.81 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6df41f1-086d-4f64-a685-a48677d806e0")
+		(property "Reference" "#PWR020"
+			(at 229.87 137.16 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 229.87 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d22dd3f6-a75d-43ba-bb34-2b04ef6f06ee")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 207.01 20.32 0)
 		(unit 1)
@@ -7315,6 +7846,169 @@
 		)
 	)
 	(symbol
+		(lib_id "mousser:103R012BB100")
+		(at 179.07 120.65 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "df005595-5073-4d3d-a58c-511301ab44bc")
+		(property "Reference" "J8"
+			(at 210.82 114.3314 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "103R012BB100"
+			(at 210.82 116.8714 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mouser:103R012BB100"
+			(at 203.2 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://cdn.amphenol-cs.com/media/wysiwyg/files/drawing/103rxxxbb10x.pdf"
+			(at 203.2 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "12 Position Connector Receptacle, Center Strip Contacts Surface Mount Gold"
+			(at 203.2 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.68"
+			(at 203.2 120.65 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "649-103R012BB100"
+			(at 203.2 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Amphenol-Aorora/103R012BB100?qs=pBJMDPsKWf3jqgnw7u7Lpg%3D%3D"
+			(at 203.2 125.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Amphenol"
+			(at 203.2 128.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "103R012BB100"
+			(at 203.2 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(pin "MP1"
+			(uuid "be49c252-5978-4aee-a1b0-a0b09a1c4877")
+		)
+		(pin "10"
+			(uuid "b11bf63d-6af4-4c12-bfd0-e1fb8a85aca2")
+		)
+		(pin "3"
+			(uuid "f4e41815-1078-449e-84a1-ce0d9e36f7fa")
+		)
+		(pin "11"
+			(uuid "4982c555-4905-4b6a-bf1e-66caa2292adf")
+		)
+		(pin "2"
+			(uuid "4fa5c7f6-5280-4938-a1c2-2e48c29984a4")
+		)
+		(pin "5"
+			(uuid "6ec8b9e4-6cdc-411c-a3e5-4a385f6c7e41")
+		)
+		(pin "MP2"
+			(uuid "87c18e9b-4a95-41b7-ae18-dee584ee7e58")
+		)
+		(pin "8"
+			(uuid "2bf4b1a0-6849-499b-9fde-dab6b1176331")
+		)
+		(pin "MP4"
+			(uuid "5745b726-abd2-49e1-9a79-5c635a9a01a7")
+		)
+		(pin "12"
+			(uuid "90ff4c98-33b9-46aa-97c8-0e7cd201c9b5")
+		)
+		(pin "7"
+			(uuid "c449c339-4ab6-423e-9448-3058580fa368")
+		)
+		(pin "4"
+			(uuid "9cae101f-dc05-4e47-a282-70c8f80faf41")
+		)
+		(pin "MP3"
+			(uuid "687c7a94-ce08-48bf-96b6-a37bf8e7f321")
+		)
+		(pin "6"
+			(uuid "3a4725e8-744c-487f-9a4a-04ebebfc99ba")
+		)
+		(pin "9"
+			(uuid "07d17bf2-e8ef-4911-8585-b1875e3c5d27")
+		)
+		(pin "1"
+			(uuid "f03043ba-99d9-4662-9dfa-9815e4895d37")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "J8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 90.17 189.23 0)
 		(unit 1)
@@ -7375,6 +8069,72 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "#PWR016")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 242.57 149.86 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e66c5e87-221b-490c-8bf8-db889069fb60")
+		(property "Reference" "#PWR038"
+			(at 242.57 146.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 242.57 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 242.57 149.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1d37ccb9-c533-4716-bb17-c1ed0ca5d27e")
+		)
+		(instances
+			(project "LegoLight_R3"
+				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
+					(reference "#PWR038")
 					(unit 1)
 				)
 			)
@@ -7484,7 +8244,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 156.21 101.6 0)
 			(effects
 				(font
@@ -7563,7 +8323,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm_HandSoldering"
+		(property "Footprint" "Crystal:Crystal_SMD_MicroCrystal_CC8V-T1A-2Pin_2.0x1.2mm"
 			(at 139.7 105.41 0)
 			(effects
 				(font
@@ -7582,6 +8342,15 @@
 			)
 		)
 		(property "Description" "Two pin crystal"
+			(at 139.7 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "815-ABS06-32.768K-T"
 			(at 139.7 105.41 0)
 			(effects
 				(font
@@ -7749,7 +8518,7 @@
 		)
 	)
 	(symbol
-		(lib_id "TL3305AF160QG:TL3305AF160QG")
+		(lib_id "Switch:SW_Push")
 		(at 242.57 34.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7776,27 +8545,25 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "SnapEDA Library:SW_TL3305AF160QG"
-			(at 242.57 34.29 0)
+		(property "Footprint" "mouser:B3U-1000P"
+			(at 242.57 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 				(hide yes)
 			)
 		)
 		(property "Datasheet" "~"
-			(at 242.57 34.29 0)
+			(at 242.57 29.21 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left bottom)
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Push button switch, generic, two pins"
 			(at 242.57 34.29 0)
 			(effects
 				(font
@@ -7869,12 +8636,6 @@
 		)
 		(pin "2"
 			(uuid "b40beb31-1f5d-495a-a94a-5e313cad83d3")
-		)
-		(pin "4"
-			(uuid "b2bb90cd-6f94-488d-bc1a-6103ef3fd9e7")
-		)
-		(pin "3"
-			(uuid "71622d95-39e4-4e8e-a7bf-5982d3e6a9a6")
 		)
 		(instances
 			(project "LegoLight_R3"
@@ -8049,72 +8810,6 @@
 			(project "LegoLight_R3"
 				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
 					(reference "U3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 170.18 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "fd52e0f0-cfc9-4505-b7cf-ffe97e559f5b")
-		(property "Reference" "#PWR026"
-			(at 170.18 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 170.18 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 170.18 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 170.18 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 170.18 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0db050e2-4bf9-46c6-907e-954dfe963f0b")
-		)
-		(instances
-			(project "LegoLight_R3"
-				(path "/b7df49f9-2249-4c59-91c1-22f2b0733f01"
-					(reference "#PWR026")
 					(unit 1)
 				)
 			)

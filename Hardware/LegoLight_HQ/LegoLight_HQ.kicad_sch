@@ -5,6 +5,203 @@
 	(uuid "f3ae5f29-d137-4180-adf5-da9547fa0dce")
 	(paper "A4")
 	(lib_symbols
+		(symbol "Connector_Generic:Conn_01x04"
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x04"
+				(at 0 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Conn_01x04_1_1"
+				(rectangle
+					(start -1.27 -4.953)
+					(end 0 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 -2.413)
+					(end 0 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 2.667)
+					(end 0 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -1.27 3.81)
+					(end 1.27 -6.35)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at -5.08 2.54 0)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 3.81)
+					(name "Pin_2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -2.54 0)
+					(length 3.81)
+					(name "Pin_3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -5.08 -5.08 0)
+					(length 3.81)
+					(name "Pin_4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Connector_Generic:Conn_02x15_Odd_Even"
 			(pin_names
 				(offset 1.016) hide)
@@ -956,6 +1153,142 @@
 				)
 			)
 		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "Device:R"
 			(pin_numbers hide)
 			(pin_names
@@ -1342,126 +1675,6 @@
 				)
 			)
 		)
-		(symbol "power:+BATT"
-			(power)
-			(pin_numbers hide)
-			(pin_names
-				(offset 0) hide)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers hide)
@@ -1680,10 +1893,34 @@
 		)
 	)
 	(junction
+		(at 54.61 63.5)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "06e0c60e-995f-4590-99de-d2843f3ed072")
+	)
+	(junction
 		(at 101.6 91.44)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "155ad842-6df8-4f8e-8cb0-2f15236db5a8")
+	)
+	(junction
+		(at 54.61 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "76775c2a-e965-45a7-ab59-1b699911d0de")
+	)
+	(junction
+		(at 54.61 96.52)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7d6f599b-2c00-40a1-b535-e5eb24bdfdc6")
+	)
+	(junction
+		(at 67.31 91.44)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b9349042-9863-4a55-b276-daabec31062d")
 	)
 	(junction
 		(at 87.63 80.01)
@@ -1699,13 +1936,23 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 59.69) (xy 90.17 62.23)
+			(xy 54.61 60.96) (xy 54.61 63.5)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "0de5e680-ccac-4a8a-b6b9-d1344d124850")
+		(uuid "0ab7a76a-8b9c-4729-b1e4-afeb9bb14b32")
+	)
+	(wire
+		(pts
+			(xy 116.84 116.84) (xy 120.65 116.84)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1539cdbd-271d-494b-8592-85bc70b01a21")
 	)
 	(wire
 		(pts
@@ -1729,6 +1976,26 @@
 	)
 	(wire
 		(pts
+			(xy 67.31 86.36) (xy 77.47 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28d39070-0919-430b-a5fa-509aff4246c3")
+	)
+	(wire
+		(pts
+			(xy 67.31 60.96) (xy 80.01 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40827035-2dbf-48ca-bef2-bcbc7b91c397")
+	)
+	(wire
+		(pts
 			(xy 82.55 91.44) (xy 87.63 91.44)
 		)
 		(stroke
@@ -1739,13 +2006,33 @@
 	)
 	(wire
 		(pts
-			(xy 120.65 59.69) (xy 120.65 62.23)
+			(xy 43.18 66.04) (xy 43.18 67.31)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b5ff499-952b-46da-99ea-a13d7424a973")
+		(uuid "6eb943c0-57cc-4e68-96d2-19d2c0b67e58")
+	)
+	(wire
+		(pts
+			(xy 67.31 91.44) (xy 74.93 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6ee96819-7a69-42da-adc9-57d1d88b2f4b")
+	)
+	(wire
+		(pts
+			(xy 54.61 93.98) (xy 54.61 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "718916a4-3255-4b9d-8198-972f11ccc75c")
 	)
 	(wire
 		(pts
@@ -1759,6 +2046,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 96.52) (xy 54.61 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c44bec9-2e74-40e7-bdcd-8e0d0679c0ad")
+	)
+	(wire
+		(pts
 			(xy 101.6 80.01) (xy 101.6 91.44)
 		)
 		(stroke
@@ -1769,13 +2066,33 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 60.96) (xy 110.49 59.69)
+			(xy 54.61 91.44) (xy 54.61 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "b7361024-51d1-47d9-a151-8b9bf8eae5be")
+		(uuid "a00093a0-8e44-4bd4-b4ca-10e7e0e24210")
+	)
+	(wire
+		(pts
+			(xy 54.61 63.5) (xy 45.72 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a6f719a7-059f-4388-a2a4-df2700373c6b")
+	)
+	(wire
+		(pts
+			(xy 67.31 88.9) (xy 67.31 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3cf2b0d-6df4-40fe-afd9-19731da9fe1c")
 	)
 	(wire
 		(pts
@@ -1786,6 +2103,46 @@
 			(type default)
 		)
 		(uuid "b8ff5d46-0ea0-4365-b300-2b94e76af34b")
+	)
+	(wire
+		(pts
+			(xy 74.93 90.17) (xy 74.93 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc0f8cdc-7138-4665-8fde-a5ebbd213d45")
+	)
+	(wire
+		(pts
+			(xy 116.84 119.38) (xy 120.65 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e120b89a-60c2-4395-9dc1-4b4fefb38ae2")
+	)
+	(wire
+		(pts
+			(xy 67.31 63.5) (xy 76.2 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f1bd9260-9534-4d3e-bb64-2a4ec245ffd4")
+	)
+	(wire
+		(pts
+			(xy 54.61 66.04) (xy 43.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f874f468-51b2-4423-ae67-e7755de157f5")
 	)
 	(label "+3.3V"
 		(at 87.63 72.39 0)
@@ -1831,41 +2188,8 @@
 		)
 		(uuid "18795758-de83-4774-bc0a-daa5f5a09dc3")
 	)
-	(label "GND"
-		(at 101.6 58.42 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "28d15d1e-94f1-4cc0-950e-633506dd2ca2")
-	)
-	(label "VBUS"
-		(at 54.61 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2a786dc3-ee5b-4a30-bdd4-17af2d548e98")
-	)
-	(label "GND"
-		(at 54.61 66.04 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "2ab8aa1b-d098-48ab-b065-c5f1cb695a90")
-	)
-	(label "+3.3V"
-		(at 90.17 62.23 0)
+	(label "SCL"
+		(at 132.08 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1873,18 +2197,29 @@
 			)
 			(justify left bottom)
 		)
-		(uuid "3e98afbc-c447-411e-8763-38429c9ed63c")
+		(uuid "26a9fff8-7d0c-49ec-b2d5-c7ec4820cbb9")
 	)
-	(label "GND"
-		(at 54.61 96.52 180)
+	(label "SCL"
+		(at 152.4 91.44 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "45ab9e68-eed2-4fed-b9cc-92a089bda478")
+		(uuid "3b6b6312-2261-4291-9ffb-a3078e08f9e9")
+	)
+	(label "SDA"
+		(at 116.84 114.3 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "48283868-4c1b-4b05-bdca-28fed4f84da9")
 	)
 	(label "IO18"
 		(at 54.61 68.58 180)
@@ -1896,6 +2231,17 @@
 			(justify right bottom)
 		)
 		(uuid "499d4ea3-459d-4646-a5f6-ed985e0d902f")
+	)
+	(label "SCL"
+		(at 116.84 121.92 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4df75d51-4473-4fef-bdba-6102ac99b8ab")
 	)
 	(label "BAT"
 		(at 67.31 96.52 0)
@@ -1918,28 +2264,6 @@
 			(justify right bottom)
 		)
 		(uuid "6f1595ff-4279-44fa-89c5-12b5ced8dac6")
-	)
-	(label "VBUS"
-		(at 110.49 60.96 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "6fc21ef6-0453-4af5-9e63-9119a7bb80ab")
-	)
-	(label "VBUS"
-		(at 54.61 63.5 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "724225ed-113b-44c0-8dde-c77d8ecfab02")
 	)
 	(label "IO39"
 		(at 54.61 81.28 180)
@@ -2018,28 +2342,6 @@
 		)
 		(uuid "97ae9f59-bddb-4621-baf3-5c93fececd61")
 	)
-	(label "GND"
-		(at 67.31 86.36 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "97c1411e-6f6f-4c23-87ed-d5b209a6d9a4")
-	)
-	(label "GND"
-		(at 54.61 91.44 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b0768211-7801-4955-92fd-382c009f6826")
-	)
 	(label "IO41"
 		(at 54.61 86.36 180)
 		(fields_autoplaced yes)
@@ -2061,17 +2363,6 @@
 			(justify left bottom)
 		)
 		(uuid "b8fd2958-50f5-4471-8fd5-ae2c1581a058")
-	)
-	(label "BAT"
-		(at 120.65 62.23 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "bc62cae6-8f1c-4cba-8764-96c85807310f")
 	)
 	(label "IO02"
 		(at 82.55 91.44 180)
@@ -2095,16 +2386,16 @@
 		)
 		(uuid "d02f9747-5f43-4a2d-9ab2-4628e425a5e3")
 	)
-	(label "GND"
-		(at 54.61 93.98 180)
+	(label "SDA"
+		(at 132.08 93.98 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "d5b9911e-875b-43e6-a2d4-9cdff9c2ac20")
+		(uuid "d1830192-5c08-4aaa-b238-212c1714c210")
 	)
 	(label "IO47"
 		(at 54.61 73.66 180)
@@ -2116,50 +2407,6 @@
 			(justify right bottom)
 		)
 		(uuid "d72d3da2-3f89-4ae1-ba54-0e0a2a45c471")
-	)
-	(label "+3.3V"
-		(at 67.31 91.44 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "d9040d7e-fbd0-4b29-993d-798f8bae20a7")
-	)
-	(label "+3.3V"
-		(at 67.31 63.5 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e123c5ec-249a-4d9c-8777-6f70c76f5ba0")
-	)
-	(label "GND"
-		(at 67.31 60.96 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e81c33c8-974a-44a0-abdf-ba468ff5e4bf")
-	)
-	(label "+3.3V"
-		(at 67.31 88.9 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "ed2d4f86-f70f-4cce-a71e-42f582d088b1")
 	)
 	(label "SDA"
 		(at 67.31 71.12 0)
@@ -2182,6 +2429,17 @@
 			(justify right bottom)
 		)
 		(uuid "f02b4d56-4d08-4f15-a9f9-703551e0b640")
+	)
+	(label "SDA"
+		(at 152.4 93.98 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f4ad5fe2-5360-4be0-8c57-2bc0d62ef3ab")
 	)
 	(label "IO40"
 		(at 54.61 83.82 180)
@@ -2260,6 +2518,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "CR1206-FX-4701ELF"
+			(at 87.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "45a9356e-8b6a-4d97-8e55-f084496753a2")
 		)
@@ -2270,6 +2537,164 @@
 			(project "LegoLight_HQ"
 				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 123.19 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "04ad6312-787e-4a5e-9467-af5975f01c74")
+		(property "Reference" "C2"
+			(at 127 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0.1uf"
+			(at 127 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 124.1552 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 123.19 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 123.19 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "581-08055C104M4T4A"
+			(at 123.19 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d4519b8-bd8a-4a69-a494-e19856c3787e")
+		)
+		(pin "2"
+			(uuid "3acc47b7-ccfb-4082-8fa8-d8d39bde0f23")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 110.49 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "179b0062-6186-45f5-9c4a-5cb19532a008")
+		(property "Reference" "C1"
+			(at 114.3 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10uf"
+			(at 114.3 69.8499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 111.4552 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "80-C0805C106K8R"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b56159f8-1087-463e-9fa5-dacdf25b4abc")
+		)
+		(pin "2"
+			(uuid "605839b9-16ad-45ad-b8dc-29f1494388b3")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2344,6 +2769,270 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 54.61 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "33fb6cb3-aa67-44ee-8b83-0baa14833712")
+		(property "Reference" "#PWR08"
+			(at 54.61 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1c64b1ff-e4c7-45d0-a2cf-b4b612a0c433")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 74.93 90.17 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3a62c6f5-257b-46de-b08e-271883badcda")
+		(property "Reference" "#PWR01"
+			(at 74.93 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 74.93 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 74.93 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 74.93 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 74.93 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "84586d1a-948a-4d8a-89e6-2b366584c9d9")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 80.01 60.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c028816-3cd9-4040-bd2b-5e761ec892e1")
+		(property "Reference" "#PWR010"
+			(at 80.01 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 80.01 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 80.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 80.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 80.01 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dee0aad8-763c-4219-99fa-8db2cba45ad9")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR010")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 110.49 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4847b086-c5f3-45ad-af6a-e685bd21050f")
+		(property "Reference" "#PWR017"
+			(at 110.49 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 110.49 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 110.49 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "eb31e10b-61de-49dd-8378-fc075f6cadbb")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR017")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Switch:SW_Push")
 		(at 96.52 80.01 0)
 		(unit 1)
@@ -2412,17 +3101,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:VBUS")
-		(at 110.49 59.69 0)
+		(lib_id "power:GND")
+		(at 43.18 67.31 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "5d9dbc55-8aad-4ef1-a68e-e87857525524")
-		(property "Reference" "#PWR01"
-			(at 110.49 63.5 0)
+		(uuid "4dcdb43e-5932-4f70-9192-ee90dadbdbe2")
+		(property "Reference" "#PWR09"
+			(at 43.18 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2430,8 +3119,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "VBUS"
-			(at 110.49 54.61 0)
+		(property "Value" "GND"
+			(at 43.18 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2439,7 +3128,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 110.49 59.69 0)
+			(at 43.18 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2448,7 +3137,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 110.49 59.69 0)
+			(at 43.18 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2456,8 +3145,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"VBUS\""
-			(at 110.49 59.69 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2466,12 +3155,78 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e42bab7-37b8-48e3-bd4a-670008301fb4")
+			(uuid "013540d3-1f00-4e1f-b3b1-a333111bcbfb")
 		)
 		(instances
 			(project "LegoLight_HQ"
 				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
-					(reference "#PWR01")
+					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 110.49 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "535797fb-a89e-4614-b289-79f9e322f50d")
+		(property "Reference" "#PWR015"
+			(at 110.49 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 110.49 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 110.49 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 110.49 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 110.49 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "51263991-a2f1-43c9-9496-c395dc155883")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR015")
 					(unit 1)
 				)
 			)
@@ -2522,6 +3277,15 @@
 			)
 		)
 		(property "Description" "Generic connector, double row, 02x15, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 59.69 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" " M50-3001545"
 			(at 59.69 78.74 0)
 			(effects
 				(font
@@ -2630,6 +3394,357 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 120.65 116.84 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "72d51159-04a3-41d2-942b-98e5f6520d18")
+		(property "Reference" "#PWR020"
+			(at 127 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 124.46 116.8399 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 120.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 120.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 120.65 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be5fe26c-2abb-4db7-bedf-0d11d6f16c83")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 45.72 63.5 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "797b6751-481e-4ce0-bc4e-89ba69abb933")
+		(property "Reference" "#PWR014"
+			(at 49.53 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 41.91 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 45.72 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 45.72 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 45.72 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81ecb444-53b2-4e65-872f-34b198450867")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 87.63 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7c38c3bd-0262-48e1-b779-a9ba5a0354e5")
+		(property "Reference" "#PWR02"
+			(at 87.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 87.63 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 87.63 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0d0f8ab4-db1f-49ac-b3be-7266582c3a22")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 147.32 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d99b8d9-1434-4c17-9ff6-d1692e601e53")
+		(property "Reference" "J2"
+			(at 144.78 92.71 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "I2C"
+			(at 144.78 91.44 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "SnapEDA Library:SPARKFUN_PRT-14417"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4328"
+			(at 147.32 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fd02c3f2-37ed-4525-9654-934b9a434773")
+		)
+		(pin "2"
+			(uuid "afb779dc-4bdc-4a84-939d-ff6dc2de1289")
+		)
+		(pin "3"
+			(uuid "5aa503b7-0a34-463e-a1d3-cb21acfaa6e1")
+		)
+		(pin "4"
+			(uuid "8574cf4f-ae19-4a0b-9815-4f54b8302ccd")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 76.2 63.5 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8153094e-cd9a-45c6-ad91-a018a997f818")
+		(property "Reference" "#PWR03"
+			(at 72.39 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 80.01 63.4999 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 76.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 76.2 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f381baec-fb4a-45b6-b387-43f7a274f8ea")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 87.63 76.2 0)
 		(unit 1)
@@ -2684,6 +3799,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "CR1206-FX-4701ELF"
+			(at 87.63 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "16bef7cb-c84a-4908-a0fa-0b3abe98882a")
 		)
@@ -2700,17 +3824,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 111.76 119.38 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a990ee44-d2a5-4b42-89c0-77f30eebe175")
+		(property "Reference" "J4"
+			(at 109.22 115.57 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "VEML7700-TT"
+			(at 109.22 114.3 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "SnapEDA Library:XDCR_VEML7700-TT"
+			(at 111.76 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 111.76 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 111.76 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "78-VEML7700-TT"
+			(at 111.76 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0170f145-6fd8-4daf-85e5-be71f9579718")
+		)
+		(pin "2"
+			(uuid "b3f9e5ff-b251-49a7-9046-760e015cd530")
+		)
+		(pin "3"
+			(uuid "54731d64-e499-4899-90f4-fb57ed3edd78")
+		)
+		(pin "4"
+			(uuid "c7e4a9fc-4e1b-4220-bd58-640d059886ca")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
-		(at 90.17 59.69 0)
+		(at 123.19 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ae2b99d6-cce8-4cfa-a59b-53d2639fe145")
-		(property "Reference" "#PWR03"
-			(at 90.17 63.5 0)
+		(uuid "ab99d302-0b41-4560-9c08-24ee08c79762")
+		(property "Reference" "#PWR016"
+			(at 123.19 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2719,7 +3927,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 90.17 54.61 0)
+			(at 123.19 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2727,7 +3935,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 59.69 0)
+			(at 123.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2736,7 +3944,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 59.69 0)
+			(at 123.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2745,7 +3953,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 90.17 59.69 0)
+			(at 123.19 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2754,29 +3962,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "73b20196-3922-43d3-807a-01cd5decd7d1")
+			(uuid "110874fe-5d7f-4313-996f-74dec7c4c55d")
 		)
 		(instances
 			(project "LegoLight_HQ"
 				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
-					(reference "#PWR03")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 120.65 59.69 0)
+		(lib_id "power:GND")
+		(at 77.47 86.36 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d6b46af7-cf83-4b52-8ade-e66a6751c128")
-		(property "Reference" "#PWR04"
-			(at 120.65 63.5 0)
+		(uuid "affd10f5-c84e-401f-b047-c710f7711cf0")
+		(property "Reference" "#PWR011"
+			(at 83.82 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2784,16 +3992,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+BATT"
-			(at 120.65 54.61 0)
+		(property "Value" "GND"
+			(at 81.28 86.3599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Footprint" ""
-			(at 120.65 59.69 0)
+			(at 77.47 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2802,7 +4011,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 120.65 59.69 0)
+			(at 77.47 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2810,8 +4019,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+BATT\""
-			(at 120.65 59.69 0)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2820,7 +4029,272 @@
 			)
 		)
 		(pin "1"
-			(uuid "a192d1af-8229-4bd6-be04-b05aa31ca073")
+			(uuid "f4674665-ad77-472b-b60a-e1e50c5ba962")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 87.63 99.06 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b45945f3-f8d4-4d13-8590-75d447d57f82")
+		(property "Reference" "#PWR012"
+			(at 87.63 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 87.63 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 87.63 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "62242ae3-7778-4de9-acff-5db1d51038d0")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR012")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 132.08 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "badd9050-3a38-4d7d-8952-9a741561349f")
+		(property "Reference" "#PWR06"
+			(at 132.08 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 132.08 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 132.08 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3ba26c7a-bd38-46a1-ac14-c36f5afea641")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 152.4 99.06 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c6c796c8-8b2f-409b-9e87-32449b07c62b")
+		(property "Reference" "#PWR07"
+			(at 152.4 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 152.4 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 152.4 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c142a6fb-30cb-4043-823a-b336f9513b9f")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 132.08 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e7051d3b-f366-4df8-8561-0ce29254f0a9")
+		(property "Reference" "#PWR04"
+			(at 128.27 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 135.89 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 132.08 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f618a6a2-f709-49ee-9f5f-f288a6974fd4")
 		)
 		(instances
 			(project "LegoLight_HQ"
@@ -2832,17 +4306,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 101.6 58.42 0)
+		(lib_id "power:+3.3V")
+		(at 120.65 119.38 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "ee9e0eb5-4351-47c9-95ac-fe379c3db418")
-		(property "Reference" "#PWR02"
-			(at 101.6 64.77 0)
+		(uuid "e724680c-4c3c-4c27-92d9-c31a69551ab3")
+		(property "Reference" "#PWR019"
+			(at 116.84 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2850,16 +4324,17 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 101.6 63.5 0)
+		(property "Value" "+3.3V"
+			(at 124.46 119.3799 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
-			(at 101.6 58.42 0)
+			(at 120.65 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2868,7 +4343,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 101.6 58.42 0)
+			(at 120.65 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2876,8 +4351,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 101.6 58.42 0)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 120.65 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2886,12 +4361,96 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff193b1c-3fcf-4a18-8cf1-8fc274f1e113")
+			(uuid "7d4dc416-14a2-44f8-9bcf-b63df7f76d1b")
 		)
 		(instances
 			(project "LegoLight_HQ"
 				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
-					(reference "#PWR02")
+					(reference "#PWR019")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x04")
+		(at 127 96.52 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f4147564-a4af-4d45-ab60-7903d9b77b05")
+		(property "Reference" "J3"
+			(at 124.46 92.71 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Value" "I2C"
+			(at 124.46 91.44 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify left top)
+			)
+		)
+		(property "Footprint" "SnapEDA Library:SPARKFUN_PRT-14417"
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4328"
+			(at 127 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "046f53d9-5ec1-48c1-a399-04ae8e42467a")
+		)
+		(pin "2"
+			(uuid "0abc21b6-fb63-49d9-8b05-aecab894411d")
+		)
+		(pin "3"
+			(uuid "c0d63e4a-e77f-4917-9b66-fc7525962bfd")
+		)
+		(pin "4"
+			(uuid "286e5591-9f63-4c19-b839-c85f06375b52")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -2958,6 +4517,139 @@
 			(project "LegoLight_HQ"
 				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
 					(reference "#PWR05")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:VBUS")
+		(at 152.4 96.52 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fa901b9d-67c3-45cb-9da7-5a896d6dbd88")
+		(property "Reference" "#PWR013"
+			(at 148.59 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VBUS"
+			(at 156.21 96.5199 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 152.4 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 152.4 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VBUS\""
+			(at 152.4 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f7dbebf0-f7b1-4d02-858c-f4149a12a0a4")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR013")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 123.19 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb78c3e6-835c-45e7-abae-8a76edc0c010")
+		(property "Reference" "#PWR018"
+			(at 123.19 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 123.19 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 123.19 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 123.19 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 123.19 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c7ef2e8-1dcd-47dd-b407-75bbe916bd4d")
+		)
+		(instances
+			(project "LegoLight_HQ"
+				(path "/f3ae5f29-d137-4180-adf5-da9547fa0dce"
+					(reference "#PWR018")
 					(unit 1)
 				)
 			)

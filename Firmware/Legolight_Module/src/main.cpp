@@ -1,5 +1,7 @@
 #define VERSION 1
 #include "Arduino.h"
+#undef max
+#undef min
 
 #include <TaskScheduler.h>
 Scheduler runner;
