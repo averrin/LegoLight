@@ -473,7 +473,11 @@
     "meta": {
       "version": 3
     },
-    "net_colors": null,
+    "net_colors": {
+      "+3.3V": "rgb(0, 255, 0)",
+      "+5V": "rgb(0, 255, 0)",
+      "GND": "rgb(255, 255, 0)"
+    },
     "netclass_assignments": {
       "+3.3V": "PWR",
       "+5V": "PWR",
@@ -549,7 +553,7 @@
           "group_by": false,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -627,6 +631,12 @@
           "group_by": false,
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "SNAPEDA_PN",
+          "name": "SNAPEDA_PN",
           "show": false
         }
       ],

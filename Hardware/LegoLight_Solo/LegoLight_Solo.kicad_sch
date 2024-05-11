@@ -3664,6 +3664,151 @@
 				)
 			)
 		)
+		(symbol "Switch:SW_Push"
+			(pin_numbers hide)
+			(pin_names
+				(offset 1.016) hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "SW"
+				(at 1.27 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "SW_Push"
+				(at 0 -1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Push button switch, generic, two pins"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "switch normally-open pushbutton push-button"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "SW_Push_0_1"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 1.27) (xy 0 3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.54 1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "USB4105-GF-A:USB4105-GF-A"
 			(pin_names
 				(offset 1.016)
@@ -5333,6 +5478,12 @@
 		(uuid "03a2d7f9-a7ba-46c0-a13c-9397e7aa26a6")
 	)
 	(junction
+		(at 180.34 82.55)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0e197c37-2b7c-4af9-afee-0102a46cbd5a")
+	)
+	(junction
 		(at 69.85 80.01)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5373,6 +5524,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "31cfffb9-7eb7-482d-8423-74dc35b2fe10")
+	)
+	(junction
+		(at 177.8 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "354f3705-bcf0-4edb-856c-bdfdf8887c91")
 	)
 	(junction
 		(at 40.64 156.21)
@@ -5433,6 +5590,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7841dd51-17f5-49ae-9842-083179967800")
+	)
+	(junction
+		(at 34.29 187.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "79307499-2376-40ef-9d2c-453d49dfa962")
 	)
 	(junction
 		(at 69.85 72.39)
@@ -5670,6 +5833,16 @@
 	)
 	(wire
 		(pts
+			(xy 177.8 88.9) (xy 185.42 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a195691-697b-4bba-9be9-e77ac8b56164")
+	)
+	(wire
+		(pts
 			(xy 102.87 135.89) (xy 110.49 135.89)
 		)
 		(stroke
@@ -5677,16 +5850,6 @@
 			(type default)
 		)
 		(uuid "0c9d3291-de1f-4ebc-bfb7-c34b53a48efb")
-	)
-	(wire
-		(pts
-			(xy 177.8 88.9) (xy 185.42 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0cc8be19-36d9-4384-b71d-0cf179372b77")
 	)
 	(wire
 		(pts
@@ -5717,6 +5880,26 @@
 			(type default)
 		)
 		(uuid "17e55779-e2ac-4a07-95f3-068fa9ddc7e5")
+	)
+	(wire
+		(pts
+			(xy 180.34 82.55) (xy 185.42 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18ef6ef1-1483-4b9f-ac5b-c0cae3c595b1")
+	)
+	(wire
+		(pts
+			(xy 180.34 74.93) (xy 186.69 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a65dd76-bcaf-416f-afe6-251248cb337e")
 	)
 	(wire
 		(pts
@@ -6050,6 +6233,16 @@
 	)
 	(wire
 		(pts
+			(xy 22.86 187.96) (xy 22.86 191.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "75f81f4e-929a-4e64-bfd2-eef1bee93a8e")
+	)
+	(wire
+		(pts
 			(xy 177.8 88.9) (xy 177.8 90.17)
 		)
 		(stroke
@@ -6240,7 +6433,17 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 82.55) (xy 185.42 82.55)
+			(xy 177.8 72.39) (xy 186.69 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "97118d88-888a-4132-a504-fdf0928999ee")
+	)
+	(wire
+		(pts
+			(xy 171.45 82.55) (xy 180.34 82.55)
 		)
 		(stroke
 			(width 0)
@@ -6287,6 +6490,16 @@
 			(type default)
 		)
 		(uuid "9a4fceee-9f56-4094-81c7-afd64866fba9")
+	)
+	(wire
+		(pts
+			(xy 33.02 187.96) (xy 34.29 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9b3bbdec-cf4a-41e1-965e-e305754f39a4")
 	)
 	(wire
 		(pts
@@ -6407,6 +6620,16 @@
 			(type default)
 		)
 		(uuid "ab4d5d79-ffea-4d77-b015-93d58f56aa88")
+	)
+	(wire
+		(pts
+			(xy 177.8 88.9) (xy 177.8 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "abae22aa-46ac-46fc-bc80-7ff592164b8f")
 	)
 	(wire
 		(pts
@@ -6580,6 +6803,16 @@
 	)
 	(wire
 		(pts
+			(xy 34.29 187.96) (xy 41.91 187.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cae38d32-5bfa-4de4-a6d0-4fb5c9a28d45")
+	)
+	(wire
+		(pts
 			(xy 55.88 148.59) (xy 60.96 148.59)
 		)
 		(stroke
@@ -6717,6 +6950,16 @@
 			(type default)
 		)
 		(uuid "ded840c3-49ae-4337-982c-d7dd0c90a0a5")
+	)
+	(wire
+		(pts
+			(xy 180.34 82.55) (xy 180.34 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e27edb5f-e3f0-4082-b1d3-8ce029ade69f")
 	)
 	(wire
 		(pts
@@ -6977,6 +7220,17 @@
 		)
 		(uuid "3b3a603d-2fbc-4a53-b2c0-74c192e70ab0")
 	)
+	(label "PA07"
+		(at 127 187.96 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "3c9d4196-7684-472d-9f47-04fbb08824da")
+	)
 	(label "SDA"
 		(at 66.04 161.29 90)
 		(fields_autoplaced yes)
@@ -7142,6 +7396,28 @@
 		)
 		(uuid "8f84457c-beec-46f5-8fb8-08c99385bbf2")
 	)
+	(label "PA05"
+		(at 121.92 187.96 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "950bf8bb-f059-426b-892f-22ef41040135")
+	)
+	(label "PA05"
+		(at 41.91 187.96 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "994e1a2e-4683-4eb6-82ba-5cf6fe7a4ee6")
+	)
 	(label "SCL_ext"
 		(at 68.58 161.29 90)
 		(fields_autoplaced yes)
@@ -7163,6 +7439,17 @@
 			(justify right bottom)
 		)
 		(uuid "b50e0bd0-de8a-4f31-b0fd-7d999c2b7321")
+	)
+	(label "PA06"
+		(at 124.46 187.96 270)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "bdd13b06-34b0-4cdb-a100-92aaf920ef17")
 	)
 	(label "BAT"
 		(at 133.35 53.34 0)
@@ -9257,6 +9544,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "485-4492"
+			(at 236.22 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "a9e770e5-6b2e-4de1-ad3c-1cbeb6621075")
 		)
@@ -9718,6 +10014,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 34.29 177.8 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "627942fb-72ca-4972-9eca-6e940e48fb05")
+		(property "Reference" "#PWR053"
+			(at 34.29 181.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 34.29 172.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a0ec3973-179c-42a6-9f9c-8087569c103d")
+		)
+		(instances
+			(project "LegoLight_Solo"
+				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 109.22 24.13 0)
 		(unit 1)
@@ -10073,6 +10435,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:Conn_01x02_Socket")
+		(at 191.77 72.39 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6eeac484-c717-4edd-9ff3-9595ca4c4a55")
+		(property "Reference" "J7"
+			(at 193.04 72.3899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Conn_01x02_Socket"
+			(at 193.04 74.9299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
+			(at 191.77 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 191.77 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 191.77 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "67a9345e-3ea5-4cb9-af2b-bc14c7572c13")
+		)
+		(pin "2"
+			(uuid "cb3fdf80-472b-4c0f-b2bb-02d8bc0a211a")
+		)
+		(instances
+			(project "LegoLight_Solo"
+				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
+					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:SK6805")
 		(at 251.46 66.04 0)
 		(unit 1)
@@ -10119,6 +10551,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 251.46 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4492"
 			(at 251.46 66.04 0)
 			(effects
 				(font
@@ -10378,6 +10819,135 @@
 		)
 	)
 	(symbol
+		(lib_id "Switch:SW_Push")
+		(at 27.94 187.96 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "753a7846-5d88-41d1-9b4a-14d6ec32a272")
+		(property "Reference" "BTN1"
+			(at 27.94 186.436 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "BTN"
+			(at 27.94 188.468 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify top)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "mouser:B3U-1000P"
+			(at 27.94 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 27.94 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Push button switch, generic, two pins"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" "C"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "SNAPEDA_PN" "TL3305AF160QG"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" "E-Switch"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" "3.8 mm"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" "Manufacturer Recommendations"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "653-B3U-1000P"
+			(at 27.94 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fc85da0-a25a-4854-aaf4-2e28b3eb8596")
+		)
+		(pin "2"
+			(uuid "0da8c35a-b145-4d76-be7d-a3006a7ff7f8")
+		)
+		(instances
+			(project "LegoLight_Solo"
+				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
+					(reference "BTN1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Connector:Conn_01x02_Socket")
 		(at 190.5 82.55 0)
 		(unit 1)
@@ -10405,7 +10975,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Connector_JST:JST_SH_SM02B-SRSS-TB_1x02-1MP_P1.00mm_Horizontal"
+		(property "Footprint" "Connector_JST:JST_PH_S2B-PH-SM4-TB_1x02-1MP_P2.00mm_Horizontal"
 			(at 190.5 82.55 0)
 			(effects
 				(font
@@ -10424,6 +10994,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated"
+			(at 190.5 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-1769"
 			(at 190.5 82.55 0)
 			(effects
 				(font
@@ -10494,6 +11073,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 220.98 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4492"
 			(at 220.98 66.04 0)
 			(effects
 				(font
@@ -10644,6 +11232,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "485-4492"
+			(at 220.98 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5a9c3102-cbb0-4c3a-9a4d-be35513b47cf")
 		)
@@ -10738,6 +11335,73 @@
 			(project "LegoLight_Solo"
 				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
 					(reference "R6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "GND_1")
+		(lib_id "power:GND")
+		(at 22.86 191.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "900f019c-78e1-458a-b3bf-26717face11b")
+		(property "Reference" "#PWR052"
+			(at 22.86 198.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 22.86 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 22.86 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 22.86 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 22.86 191.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b3b9e4a-8574-43ac-acb0-cb30e625e3ef")
+		)
+		(instances
+			(project "LegoLight_Solo"
+				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
+					(reference "#PWR052")
 					(unit 1)
 				)
 			)
@@ -11537,7 +12201,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_Vishay_IHLP-5050"
+		(property "Footprint" "Inductor_SMD:L_Taiyo-Yuden_MD-5050"
 			(at 110.49 125.73 0)
 			(effects
 				(font
@@ -12039,6 +12703,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "485-4492"
+			(at 236.22 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "5e88e74a-fb37-4d99-8808-e270e8752c40")
 		)
@@ -12107,6 +12780,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 266.7 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4492"
 			(at 266.7 101.6 0)
 			(effects
 				(font
@@ -12400,6 +13082,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "485-4492"
+			(at 251.46 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "d8765ac3-5f3c-42cf-ba2b-0aec80dbd2c8")
 		)
@@ -12560,6 +13251,84 @@
 			(project "LegoLight_Solo"
 				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
 					(reference "R8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "SparkFun_Qwiic_Micro_SAMD21E-eagle-import:10KOHM-0402-1/16W-1%")
+		(at 34.29 182.88 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf45c00c-ac4f-4d40-8eb6-5ed3ab44c03a")
+		(property "Reference" "R9"
+			(at 32.766 182.88 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify bottom)
+			)
+		)
+		(property "Value" "10KOHM"
+			(at 35.814 182.88 0)
+			(effects
+				(font
+					(size 1.778 1.778)
+				)
+				(justify top)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder"
+			(at 34.29 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 34.29 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 34.29 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "652-CR0805-JW-103ELF"
+			(at 34.29 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "125d7c3f-2a1a-4d02-a94c-39950eac76fb")
+		)
+		(pin "1"
+			(uuid "c186652f-783a-4bee-9866-b687169a2afc")
+		)
+		(instances
+			(project "LegoLight_Solo"
+				(path "/792b6101-f9a6-422e-8ff8-b9286d230e7e"
+					(reference "R9")
 					(unit 1)
 				)
 			)
@@ -12885,7 +13654,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOP65P490X110-8N"
+		(property "Footprint" "mouser:SOP65P490X110-8N"
 			(at 134.62 228.27 0)
 			(effects
 				(font
@@ -13025,7 +13794,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_LGA:Kionix_LGA-12_2x2mm_P0.5mm_LayoutBorder2x4y"
+		(property "Footprint" "SnapEDA Library:KIONIX_KXTJ3-1057"
 			(at 45.72 143.51 0)
 			(effects
 				(font
@@ -13299,6 +14068,15 @@
 			)
 		)
 		(property "Description" "RGB LED with integrated controller"
+			(at 266.7 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "485-4492"
 			(at 266.7 66.04 0)
 			(effects
 				(font
